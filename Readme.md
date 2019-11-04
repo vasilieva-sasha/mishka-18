@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александра Васильева](https://up.htmlacademy.ru/adaptive/18/user/1156713).
-* Наставник: `Неизвестно`.
+* Наставник: [Руслан Бреев](https://htmlacademy.ru/profile/blckwltz).
 
 ---
 

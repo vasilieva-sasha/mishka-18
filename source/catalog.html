@@ -3,17 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__logo"><img src="logo.svg" alt="Логотип интернет-магазина Мишка"></div>
+      <a class="page-header__logo" href="index.html"><img src="logo.svg" alt="Логотип интернет-магазина Мишка"></a>
         <nav class="navigation">
           <button class="navigation__toggle" type="button"></button>
           <div class="navigation__wrapper">
           <ul class="navigation__list site-list">
             <li class="site-list__item"><a href="#">Каталог товаров</a></li>
-            <li class="site-list__item"><a href="#">Вязание на заказ</a></li>
+            <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
           </ul>
           <input class="input-search" type="text" aria-label="Запрос" placeholder="Поиск по сайту">
           <a class="cart" href="#">Корзина: пока пуста</a>
@@ -22,7 +21,7 @@
     </header>
     <main class="catalog-main">
       <section class="catalog">
-        <h1 class="catalog-main__header">Каталог товаров</h1>
+        <h1 class="catalog-main__header heading">Каталог товаров</h1>
         <ul class="catalog__list">
           <li class="catalog__item catalog-item">
             <img class="catalog-item__photo" src="item.jpg">
@@ -51,7 +50,7 @@
         </ul>
       </section>
       <section class="manufacture">
-        <h2 class="manufacture__header">Процесс производства</h2>
+        <h2 class="manufacture__header heading heading--smaller">Процесс производства</h2>
         <video class="manufacture__video">
           <source src="video.mp4" type="video/mp4">
           <source src="video.ogv" type="video/ogg">

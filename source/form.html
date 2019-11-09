@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html"><img src="logo.svg" alt="Логотип интернет-магазина Мишка"></a>
+        <nav class="navigation">
+          <button class="navigation__toggle" type="button"></button>
+          <div class="navigation__wrapper">
+          <ul class="navigation__list site-list">
+            <li class="site-list__item"><a href="#">Каталог товаров</a></li>
+            <li class="site-list__item"><a href="#">Вязание на заказ</a></li>
+          </ul>
+          <input class="input-search" type="text" aria-label="Запрос" placeholder="Поиск по сайту">
+          <a class="cart" href="#">Корзина: пока пуста</a>
+        </nav>
+      </div>
+    </header>
+    <main class="form-main">
+      <h1 class="form-main__header heading">Вязание на заказ</h1>
+      <p class="form-main__text">
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+      </p>
+      <form class="form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="form__type fieldset">
+          <div class="form__wrapper">
+            <legend class="form__legend">Тип</legend>
+            <input class="form__input input-radio" type="radio" id="accessories" checked><label class="form__label" for="accessories">Аксессуар для интерьера</label>
+            <input class="form__input input-radio" type="radio" id="toy"><label class="form__label" for="toy">Детская игрушка</label>
+          </div>
+        </fieldset>
+        <fieldset class="form__color fieldset">
+          <div class="form__wrapper">
+            <legend class="form__legend">Цвет</legend>
+            <input class="form__input input-checkbox" type="checkbox" name="color" value="white" id="white" checked><label class="form__label" for="white">Белый</label>
+            <input class="form__input input-checkbox" type="checkbox" name="color" value="grey" id="grey" checked><label class="form__label" for="grey">Серый</label>
+            <input class="form__input input-checkbox" type="checkbox" name="color" value="blue" id="blue"><label class="form__label" for="blue">«Тиффани»</label>
+            <input class="form__input input-checkbox" type="checkbox" name="color" value="black" id="black"><label class="form__label" for="black">Черный</label>
+            <input class="form__input input-checkbox" type="checkbox" name="color" value="pink" id="pink"><label class="form__label" for="pink">Розовый</label>
+            <input class="form__input input-checkbox" type="checkbox" name="color" value="orange" id="orange"><label class="form__label" for="orange">Оранжевый</label>
+          </div>
+        </fieldset>
+        <fieldset class="form__name fieldset">
+          <div class="form__wrapper">
+            <legend class="form__legend">ФИО</legend>
+            <label class="form__label" for="name">Имя:<input class="form__input input-name" type="text" name="name" id="name" placeholder="Введите ваше имя*"></label>
+            <label class="form__label" for="last-name">Фамилия:<input class="form__input input-name" name="last-name" type="text" id="last-name" placeholder="Укажите фамилию*"></label>
+            <label class="form__label" for="middle-name">Отчество:<input class="form__input input-name" name="middle-name" type="text" id="middle-name" placeholder="Отчество, если желаете"></label>
+          </div>
+        </fieldset>
+        <fieldset class="form__tel fieldset">
+          <div class="form__wrapper">
+            <legend class="form__legend">Тел</legend>
+            <input class="form__input input-tel" type="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+          </div>
+        </fieldset>
+        <fieldset class="form__mail fieldset">
+          <div class="form__wrapper">
+            <legend class="form__legend">E-mail</legend>
+            <input class="form__input input-mail" type="email" name="email" placeholder="Ваш Email*">
+          </div>
+        </fieldset>
+        <fieldset class="form__text fieldset">
+          <div class="form__wrapper">
+            <legend class="form__legend">Доп</legend>
+            <textarea class="form__input input-text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </div>
+        </fieldset>
+        <sup class="form__small">*Поля обязательны для заполнения</sup>
+        <button class="form__button button" type="submit">Отправить заказ</button>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__logo"><img src=""logo.png></a>
+      <ul class="page-footer__social social-list">
+        <li class="social-list__item"><a href="#"><svg></svg></a></li>
+        <li class="social-list__item"><a href="#"><svg></svg></a></li>
+        <li class="social-list__item"><a href="#"><svg></svg></a></li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive"><svg></svg></a>
+      </div>
+    </footer>
+  </body>
+</html>

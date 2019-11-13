@@ -1,6 +1,5 @@
 .site-list {
-  list-style: none;
-  padding: 0;
+  @include list;
 }
 
 .site-list__item a {

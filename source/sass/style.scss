@@ -1,11 +1,7 @@
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensans.woff") format("woff"),
-    url("../fonts/opensansbold.woff") format("woff"),
-    url("../fonts/opensans.woff2") format("woff2"),
-    url("../fonts/opensansbold.woff2") format("woff2");
-}
-
+@import "blocks/font.scss";
+@import "blocks/box-sizing.scss";
+@import "blocks/body.scss";
+@import "blocks/mixin.scss";
 @import "blocks/page-header.scss";
 @import "blocks/navigation.scss";
 @import "blocks/site-list.scss";
@@ -13,12 +9,18 @@
 @import "blocks/heading.scss";
 @import "blocks/promo-week.scss";
 @import "blocks/promo-table.scss";
-
-html {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-}
-
+@import "blocks/button.scss";
+@import "blocks/block-about.scss";
+@import "blocks/review.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social-list.scss";
+@import "blocks/copyright.scss";
+@import "blocks/modal.scss";
+@import "blocks/catalog-main.scss";
+@import "blocks/catalog.scss";
+@import "blocks/catalog-item.scss";
+@import "blocks/manufacture.scss";
+@import "blocks/form-main.scss";
+@import "blocks/form.scss";
+@import "blocks/fieldset.scss";

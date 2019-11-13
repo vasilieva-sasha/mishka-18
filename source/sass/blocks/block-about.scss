@@ -1,0 +1,38 @@
+.block-about__list {
+  @include list;
+  color: #000000;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.block-about__item {
+  width: 360px;
+  padding: 55px 90px 30px 30px;
+  background-position-x: 10%;
+}
+
+.block-about__item--eco {
+  background: url("../img/icon-feature-flower.svg") no-repeat 40px 0;
+}
+
+.block-about__item--money {
+  background: url("../img/icon-feature-money.svg") no-repeat 40px 0;
+}
+
+.block-about__item--heart {
+  background: url("../img/icon-feature-heart.svg") no-repeat 40px 0;
+}
+
+.block-about__item--knitting {
+  background: url("../img/icon-feature-ball.svg") no-repeat 40px 0;
+}
+
+.block-about__item--rocket {
+  background: url("../img/icon-feature-rocket.svg") no-repeat 40px 0;
+}
+
+.block-about__item--gift {
+  background: url("../img/icon-feature-gift.svg") no-repeat 40px 0;
+}
+

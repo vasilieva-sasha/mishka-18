@@ -1,0 +1,37 @@
+.review__text {
+  color: #444444;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.review__author-name {
+  color: #000000;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  font-style: normal;
+}
+
+.review__author-contact {
+  color: #444444;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.review__toggle {
+  padding: 38px 30px;
+}
+
+.review__prev {
+  height: 30px;
+  width: 130px;
+  background: url(../../img/icon-left-arrow.svg) no-repeat 50%;
+  border: none;
+}
+
+.review__next {
+  height: 30px;
+  width: 130px;
+  background: url(../../img/icon-right-arrow.svg) no-repeat 50%;
+  border: none;
+}

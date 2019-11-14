@@ -1,0 +1,7 @@
+.site-list {
+  @include list;
+}
+
+.site-list__item a {
+  color: #{$black};
+}

@@ -7,14 +7,14 @@
 }
 
 .form__label {
-  color: #000000;
+  color: #{$black};
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
 }
 
 .form__small {
-  color: #444444;
+  color: #{$grey};
   font-size: 14px;
   line-height: 16px;
 }

@@ -1,5 +1,5 @@
 .promo-week__adv {
-  color: #63d1bb;
+  color: #{$green};
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
@@ -7,14 +7,13 @@
 }
 
 .promo-week__info {
-  color: #444444;
+  color: #{$grey};
   font-size: 15px;
   line-height: 24px;
 }
 
 .promo-week__price {
-  color: #444444;
+  color: #{$grey};
   font-size: 17px;
   line-height: 24px;
 }
-

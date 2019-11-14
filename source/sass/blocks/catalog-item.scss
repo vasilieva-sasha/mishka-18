@@ -1,5 +1,5 @@
 .catalog-item__wrapper {
-  border: 1px solid #ededed;
+  border: 1px solid #{$silver};
 }
 
 .catalog-item__header {
@@ -8,7 +8,7 @@
 }
 
 .catalog-item__info {
-  color: #444444;
+  color: #{$grey};
   font-size: 13px;
   line-height: 30px;
 }

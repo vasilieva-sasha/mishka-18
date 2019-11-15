@@ -1,0 +1,18 @@
+.promotion {
+  display: none;
+
+  @include list-reset;
+}
+
+.promotion__link {
+  color: #{$black};
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+@media (min-width: #{$desktop}) {
+  .promotion {
+    display: flex;
+  }
+}

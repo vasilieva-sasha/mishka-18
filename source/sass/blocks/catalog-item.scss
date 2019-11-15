@@ -1,0 +1,19 @@
+.catalog-item__wrapper {
+  border: 1px solid #{$silver};
+}
+
+.catalog-item__header {
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.catalog-item__info {
+  color: #{$grey};
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.catalog-item__price {
+  font-size: 15px;
+  line-height: 24px;
+}

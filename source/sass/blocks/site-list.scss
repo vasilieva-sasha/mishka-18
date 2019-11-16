@@ -10,14 +10,25 @@
   position: relative;
 }
 
-@media (min-width: #{$tablet}) {
+@media (min-width: $tablet) {
   .site-list--user {
     display: flex;
     margin-left: auto;
   }
 
+  .site-list__item {
+    box-shadow: none;
+  }
+
   .site-list__item--search {
-    border-left: 1px solid #e7e7e7;
-    border-right: 1px solid #e7e7e7;
+    border-left: 1px solid $border-color-header;
+    border-right: 1px solid $border-color-header;
+    border-bottom: 1px solid $border-color-header;
+  }
+}
+
+@media (min-width: $desktop) {
+  .site-list--user {
+    order: 3;
   }
 }

@@ -1,16 +1,16 @@
 .button {
-  color: #{$grey};
+  color: $grey;
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
   padding: 13px 86px;
-  background-color: #{$white};
-  border: 2px solid #{$grey};
+  background-color: $white;
+  border: 2px solid $grey;
 }
 
 .button--green {
-  color: #{$white};
-  background-color: #{$green};
+  color: $white;
+  background-color: $green;
   border: none;
 }

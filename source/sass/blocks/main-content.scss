@@ -1,24 +1,66 @@
 .main-content {
-  background: url("../../img/hero-mobile@1x.jpg") no-repeat;
+  min-height: 490px;
+  background: $bg-color-light url("../../img/hero-mobile@1x.jpg") no-repeat 50% -20px;
+}
+
+.main-content__header {
+  text-align: center;
+  padding: 73px 37px;
 }
 
 .main-content__catalog {
-  color: #{$white};
+  @include list-reset;
+  color: $white;
   font-size: 19px;
   font-weight: 700;
   line-height: 24px;
+  margin-top: 47px;
 }
 
 .main-content__item--interior {
-  background-color: #{$green};
+  background: $green url("../../img/icon-interior.svg") no-repeat 90%;
 }
 
 .main-content__item--toys {
-  background-color: #{$green-dark};
+  background: $green-dark url("../../img/icon-toy.svg") no-repeat 90%;
 }
 
 .main-content__link {
   display: block;
-  padding: 30px;
-  color: #{$white};
+  width: 110px;
+  padding: 27px 30px;
+  color: $white;
+}
+
+@media (min-width: $tablet) {
+  .main-content {
+    width: $tablet;
+    min-height: 670px;
+    background: $bg-color-light url("../../img/hero-tablet@1x.jpg") no-repeat 50% -80px;
+  }
+
+  .main-content__catalog {
+    display: flex;
+    margin-top: 310px;
+  }
+
+  .main-content__item {
+    flex-grow: 1;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .main-content {
+    width: $desktop;
+    min-height: 670px;
+    background: $bg-color-light url("../../img/hero-desktop@1x.jpg") no-repeat 50% -80px;
+    padding: 0 50px;
+  }
+
+  .main-content__header {
+    text-align: center;
+    padding: 80px 170px;
+  }
 }

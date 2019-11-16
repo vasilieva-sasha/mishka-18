@@ -1,18 +1,26 @@
 .promotion {
-  display: none;
-
   @include list-reset;
+  display: none;
+  background-color: $bg-color-light;
+  flex-grow: 1;
+}
+
+.promotion__item {
+  padding: 0;
 }
 
 .promotion__link {
-  color: #{$black};
+  display: block;
+  color: $black;
   font-size: 15px;
   font-weight: 700;
   line-height: 24px;
+  padding: 20px 50px;
 }
 
-@media (min-width: #{$desktop}) {
+@media (min-width: $desktop) {
   .promotion {
     display: flex;
+    order: 4;
   }
 }

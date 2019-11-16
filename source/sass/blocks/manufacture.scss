@@ -1,5 +1,5 @@
 .manufacture {
-  border: 1px solid #{$silver};
+  border: 1px solid $silver;
   padding: 34px;
 }
 
@@ -9,7 +9,7 @@
 }
 
 .manufacture__text {
-  color: #{$grey};
+  color: $grey;
   font-size: 13px;
   line-height: 24px;
   padding: 34px 0;

@@ -1,5 +1,5 @@
 .contacts__table {
-  color: #{$grey};
+  color: $grey;
   font-size: 15px;
   line-height: 30px;
 }
@@ -16,5 +16,5 @@
 .contacts__e-mail {
   color: inherit;
   padding-bottom: 4px;
-  box-shadow: 0 1px #{$green};
+  box-shadow: 0 1px $green;
 }

@@ -1,9 +1,11 @@
 .button {
+  display: inline-block;
   color: $grey;
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
+  vertical-align: middle;
   padding: 13px 86px;
   background-color: $white;
   border: 2px solid $grey;

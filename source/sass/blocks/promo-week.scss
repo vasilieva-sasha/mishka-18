@@ -1,3 +1,7 @@
+.promo-week {
+  padding: 20px 30px;
+}
+
 .promo-week__adv {
   color: $green;
   font-size: 17px;
@@ -10,10 +14,87 @@
   color: $grey;
   font-size: 15px;
   line-height: 24px;
+  padding-top: 5px;
+  margin-bottom: 20px;
 }
 
 .promo-week__price {
   color: $grey;
   font-size: 17px;
+  font-weight: 700;
   line-height: 24px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.promo-week__header {
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+
+@media (min-width: $tablet) {
+  .promo-week__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .promo-week__adv {
+    width: 80px;
+    text-align: center;
+  }
+
+  .promo-week__image {
+    float: right;
+    margin-top: -250px;
+  }
+
+  .promo-week__info {
+    width: 290px;
+  }
+
+  .promo-week__price {
+    width: 290px;
+  }
+
+  .promo-week__order {
+    width: 290px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .promo-week__wrapper {
+    position: relative;
+    z-index: 2;
+    margin-top: 100px;
+    margin-bottom: 45px;
+    width: 670px;
+  }
+
+  .promo-week__header {
+    order: 2;
+  }
+
+  .promo-week__adv {
+    align-self: flex-end;
+    margin-left: 60px;
+  }
+
+  .promo-week__info {
+    font-size: 17px;
+    line-height: 30px;
+    margin-left: 195px;
+    margin-bottom: 45px;
+  }
+
+  .promo-week__price {
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 195px;
+    margin-bottom: 30px;
+  }
+
+  .promo-week__order {
+    margin-left: 195px;
+  }
 }

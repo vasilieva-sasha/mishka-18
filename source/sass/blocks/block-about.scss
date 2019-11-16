@@ -8,30 +8,73 @@
 
 .block-about__item {
   width: 360px;
-  padding: 55px 90px 30px 30px;
+  padding: 55px 85px 29px 30px;
   background-position-x: 10%;
 
-  .block-about__item--eco {
-    background: url("../img/icon-feature-flower.svg") no-repeat 40px 0;
+  &--eco {
+    background: url("../../img/icon-feature-flower.svg") no-repeat 40px 0;
   }
 
-  .block-about__item--money {
-    background: url("../img/icon-feature-money.svg") no-repeat 40px 0;
+  &--money {
+    background: url("../../img/icon-feature-money.svg") no-repeat 30px 0;
   }
 
-  .block-about__item--heart {
-    background: url("../img/icon-feature-heart.svg") no-repeat 40px 0;
+  &--heart {
+    background: url("../../img/icon-feature-heart.svg") no-repeat 40px 5px;
   }
 
-  .block-about__item--knitting {
-    background: url("../img/icon-feature-ball.svg") no-repeat 40px 0;
+  &--knitting {
+    background: url("../../img/icon-feature-ball.svg") no-repeat 35px 0;
   }
 
-  .block-about__item--rocket {
-    background: url("../img/icon-feature-rocket.svg") no-repeat 40px 0;
+  &--rocket {
+    background: url("../../img/icon-feature-rocket.svg") no-repeat 25px 0;
   }
 
-  .block-about__item--gift {
-    background: url("../img/icon-feature-gift.svg") no-repeat 40px 0;
+  &--gift {
+    background: url("../../img/icon-feature-gift.svg") no-repeat 30px 0;
+  }
+}
+
+.block-about__header {
+  padding: 50px 30px 30px;
+}
+
+@media (min-width: $tablet) {
+  .block-about {
+    margin-top: 50px;
+  }
+
+  .block-about__header {
+    margin-bottom: 20px;
+  }
+
+  .block-about__list {
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .block-about__item {
+    font-size: 20px;
+    line-height: 22px;
+    padding-right: 60px;
+    padding-bottom: 55px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .block-about {
+    margin: 80px auto 0;
+  }
+
+  .block-about__header {
+    margin-left: 190px;
+  }
+
+  .block-about__list {
+    margin-left: 190px;
   }
 }

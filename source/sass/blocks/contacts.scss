@@ -1,12 +1,21 @@
+.contacts {
+  margin-top: 65px;
+  padding-left: 25px;
+}
+
 .contacts__table {
   color: $grey;
   font-size: 15px;
   line-height: 30px;
+  margin: 20px 0;
 }
 
 .contacts__heading {
   font: inherit;
-  padding: 30px;
+}
+
+.contacts__detail {
+  padding-left: 40px;
 }
 
 .contacts__address {
@@ -17,4 +26,10 @@
   color: inherit;
   padding-bottom: 4px;
   box-shadow: 0 1px $green;
+}
+
+@media (min-width: $tablet) {
+  .contacts__table {
+    display: flex;
+  }
 }

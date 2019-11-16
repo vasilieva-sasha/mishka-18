@@ -1,5 +1,8 @@
 .promo-table {
+  width: 263px;
   color: $grey;
+  border-collapse: collapse;
+  margin-bottom: 30px;
 }
 
 .promo-table__header {
@@ -8,4 +11,27 @@
   font-weight: 400;
   line-height: 20px;
   text-align: start;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid $border-color-table;
+}
+
+.promo-table__detail {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  border-bottom: 1px solid $border-color-table;
+}
+
+@media (min-width: $tablet) {
+  .promo-table {
+    width: 290px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .promo-table {
+    margin-left: 195px;
+    margin-bottom: 115px;
+  }
 }

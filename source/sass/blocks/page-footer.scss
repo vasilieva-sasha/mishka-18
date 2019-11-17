@@ -2,7 +2,7 @@
   background-color: $light-grey;
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  margin: 40px auto 0;
 }
 
 .page-footer__logo {
@@ -15,7 +15,14 @@
   }
 
   .page-footer {
+    width: $tablet;
     flex-direction: row;
     justify-content: space-around;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-footer {
+    width: $desktop;
   }
 }

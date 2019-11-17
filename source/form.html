@@ -7,11 +7,11 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo"><img src="img/logo-mobile.svg" alt="Логотип интернет-магазина Мишка"></a>
+      <a class="page-header__logo" href="index.html"><img src="img/logo-mobile.svg" alt="Логотип интернет-магазина Мишка"></a>
       <nav class="navigation">
         <button class="navigation__toggle" type="button"></button>
-        <ul class="navigation__menu">
-          <li class="navigation__item navigation__item--catalog"><a class="navigation__link" href="catalog.html">Каталог товаров</a></li>
+        <ul class="navigation__menu navigation__menu--grey">
+          <li class="navigation__item navigation__item--grey"><a class="navigation__link navigation__link--grey" href="catalog.html">Каталог товаров</a></li>
           <li class="navigation__item"><a class="navigation__link" href="form.html">Вязание на заказ</a></li>
         </ul>
       </nav>
@@ -33,11 +33,11 @@
           <a class="page-header__cart" href="#">Корзина: пока пуста</a>
         </li>
       </ul>
-      <ul class="page-header__promotion promotion">
+      <ul class="page-header__promotion promotion promotion--grey">
         <li class="promotion__item"><a class="promotion__link" href="#">Новые поступления</a></li>
         <li class="promotion__item"><a class="promotion__link" href="#">Распродажа</a></li>
       </ul>
-      <p class="page-header__text">Бесплатная доставка по России</p>
+      <p class="page-header__text page-header__text--grey">Бесплатная доставка по России</p>
     </header>
     <main class="form-main">
       <h1 class="form-main__header heading heading--big">Вязание на заказ</h1>
@@ -48,19 +48,19 @@
         <fieldset class="form__type fieldset">
           <div class="form__wrapper">
             <legend class="form__legend">Тип</legend>
-            <input class="form__input input-radio" type="radio" id="accessories" checked><label class="form__label" for="accessories">Аксессуар для интерьера</label>
-            <input class="form__input input-radio" type="radio" id="toy"><label class="form__label" for="toy">Детская игрушка</label>
+            <label class="form__label" for="accessories"><input class="form__input input-radio" type="radio" id="accessories" checked>Аксессуар для интерьера</label>
+            <label class="form__label" for="toy"><input class="form__input input-radio" type="radio" id="toy">Детская игрушка</label>
           </div>
         </fieldset>
         <fieldset class="form__color fieldset">
           <div class="form__wrapper">
             <legend class="form__legend">Цвет</legend>
-            <input class="form__input input-checkbox" type="checkbox" name="color" value="white" id="white" checked><label class="form__label" for="white">Белый</label>
-            <input class="form__input input-checkbox" type="checkbox" name="color" value="grey" id="grey" checked><label class="form__label" for="grey">Серый</label>
-            <input class="form__input input-checkbox" type="checkbox" name="color" value="blue" id="blue"><label class="form__label" for="blue">«Тиффани»</label>
-            <input class="form__input input-checkbox" type="checkbox" name="color" value="black" id="black"><label class="form__label" for="black">Черный</label>
-            <input class="form__input input-checkbox" type="checkbox" name="color" value="pink" id="pink"><label class="form__label" for="pink">Розовый</label>
-            <input class="form__input input-checkbox" type="checkbox" name="color" value="orange" id="orange"><label class="form__label" for="orange">Оранжевый</label>
+            <label class="form__label" for="white"><input class="form__input input-checkbox" type="checkbox" name="color" value="white" id="white" checked>Белый</label>
+            <label class="form__label" for="grey"><input class="form__input input-checkbox" type="checkbox" name="color" value="grey" id="grey" checked>Серый</label>
+            <label class="form__label" for="blue"><input class="form__input input-checkbox" type="checkbox" name="color" value="blue" id="blue">«Тиффани»</label>
+            <label class="form__label" for="black"><input class="form__input input-checkbox" type="checkbox" name="color" value="black" id="black">Черный</label>
+            <label class="form__label" for="pink"><input class="form__input input-checkbox" type="checkbox" name="color" value="pink" id="pink">Розовый</label>
+            <label class="form__label" for="orange"><input class="form__input input-checkbox" type="checkbox" name="color" value="orange" id="orange">Оранжевый</label>
           </div>
         </fieldset>
         <fieldset class="form__name fieldset">
@@ -72,13 +72,13 @@
           </div>
         </fieldset>
         <fieldset class="form__tel fieldset">
-          <div class="form__wrapper">
+          <div class="form__wrapper form__wrapper--tel">
             <legend class="form__legend">Тел</legend>
             <input class="form__input input-tel" type="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
           </div>
         </fieldset>
         <fieldset class="form__mail fieldset">
-          <div class="form__wrapper">
+          <div class="form__wrapper form__wrapper--mail">
             <legend class="form__legend">E-mail</legend>
             <input class="form__input input-mail" type="email" name="email" placeholder="Ваш Email*">
           </div>
@@ -94,7 +94,7 @@
       </form>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo"><img src=""logo.png></a>
+      <a class="page-footer__logo"><img src="img/logo-footer.svg"></a>
       <ul class="page-footer__social social-list">
         <li class="social-list__item">
           <a href="#">

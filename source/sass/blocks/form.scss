@@ -1,8 +1,13 @@
+.form {
+  padding: 0 30px;
+}
+
 .form__legend {
   color: #63d1bb;
   font-size: 17px;
   font-weight: 700;
   line-height: 16px;
+  padding: 20px 0;
   text-transform: uppercase;
 }
 
@@ -11,10 +16,57 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
+  padding: 10px 0;
 }
 
 .form__small {
   color: $grey;
   font-size: 14px;
   line-height: 16px;
+}
+
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet) {
+  .form__wrapper {
+    &--tel {
+      flex-direction: row;
+    }
+
+    &--mail {
+      flex-direction: row;
+    }
+  }
+
+  .form__color {
+    background-color: $light-grey;
+  }
+
+  .form__tel {
+    background-color: $light-grey;
+  }
+
+  .form__mail {
+    background-color: $light-grey;
+  }
+
+  .form__small {
+    display: block;
+    float: right;
+    margin-top: 50px;
+  }
+
+  .form__button {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .form {
+    padding-left: 100px;
+    padding-right: 170px;
+  }
 }

@@ -36,7 +36,7 @@
     font-weight: 700;
     order: 2;
 
-    &--catalog {
+    &--grey {
       background-color: $light-grey;
     }
   }
@@ -62,7 +62,7 @@
     border-bottom: none;
   }
 
-  .navigation__item--catalog .navigation__link {
+  .navigation__link--grey {
     border-right: 1px solid $border-color-header;
   }
 
@@ -72,7 +72,7 @@
     padding: 24px 34px;
   }
 
-  .navigation__menu--catalog {
+  .navigation__menu--grey {
     background-color: $white;
   }
 }

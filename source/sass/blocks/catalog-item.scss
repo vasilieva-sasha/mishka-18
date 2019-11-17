@@ -41,5 +41,6 @@
 @media (min-width: $desktop) {
   .catalog-item {
     display: block;
+    flex-grow: 0;
   }
 }

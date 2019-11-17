@@ -14,3 +14,53 @@
   line-height: 24px;
   padding: 34px 0;
 }
+
+.manufacture__video {
+  outline: 2px solid $green;
+}
+
+@media (min-width: $tablet) {
+  .manufacture {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .manufacture__video {
+    order: 1;
+  }
+
+  .manufacture__header {
+    order: 2;
+  }
+
+  .manufacture__text {
+    order: 3;
+  }
+
+  .manufacture__button {
+    order: 4;
+    width: 588px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop) {
+  .manufacture {
+    flex-wrap: wrap;
+    height: 460px;
+  }
+
+  .manufacture__video {
+    height: 462px;
+    width: 468px;
+  }
+
+  .manufacture__text {
+    width: 230px;
+  }
+
+  .manufacture__button {
+    width: 230px;
+  }
+}

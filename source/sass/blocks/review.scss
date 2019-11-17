@@ -40,14 +40,14 @@
   height: 30px;
   width: 130px;
   align-self: flex-start;
-  background: url("../../img/icon-left-arrow.svg") no-repeat 50%;
+  background: url("../img/icon-left-arrow.svg") no-repeat 50%;
   border: none;
 }
 
 .review__next {
   height: 30px;
   width: 130px;
-  background: url("../../img/icon-right-arrow.svg") no-repeat 50%;
+  background: url("../img/icon-right-arrow.svg") no-repeat 50%;
   border: none;
 }
 
@@ -55,7 +55,7 @@
   .review {
     position: relative;
     display: block;
-    background: url("../../img/review@1x.jpg") no-repeat left 10px;
+    background: url("../img/review@1x.jpg") no-repeat left 10px;
     padding: 90px 50px;
   }
 

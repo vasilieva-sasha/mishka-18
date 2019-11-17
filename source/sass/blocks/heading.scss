@@ -1,5 +1,5 @@
 .heading {
-  color: #{$black};
+  color: $black;
   font-weight: 700;
   line-height: 30px;
   margin: 0;
@@ -19,4 +19,40 @@
 
 .heading--smaller {
   font-size: 17px;
+}
+
+@media (min-width: $tablet) {
+  .heading--big {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .heading--med {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .heading--small {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .heading--big {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .heading--med {
+    font-size: 53px;
+    font-weight: 700;
+    line-height: 57px;
+  }
+
+  .heading--small {
+    font-size: 53px;
+    font-weight: 700;
+    line-height: 57px;
+  }
 }

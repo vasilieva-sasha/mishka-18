@@ -1,16 +1,26 @@
 .button {
-  color: #{$grey};
+  display: inline-block;
+  color: $grey;
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
-  padding: 13px 86px;
-  background-color: #{$white};
-  border: 2px solid #{$grey};
+  text-align: center;
+  vertical-align: middle;
+  padding: 13px 40px;
+  width: 260px;
+  background-color: $white;
+  border: 2px solid $grey;
 }
 
 .button--green {
-  color: #{$white};
-  background-color: #{$green};
+  color: $white;
+  background-color: $green;
   border: none;
+}
+
+@media (min-width: $tablet) {
+  .button {
+    padding: 13px 40px;
+  }
 }

@@ -1,7 +1,34 @@
 .site-list {
-  @include list;
+  @include list-reset;
 }
 
-.site-list__item a {
-  color: #{$black};
+.site-list__item {
+  border-bottom: 1px solid $border-color-header;
+}
+
+.site-list__item--button {
+  position: relative;
+}
+
+@media (min-width: $tablet) {
+  .site-list--user {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .site-list__item {
+    box-shadow: none;
+  }
+
+  .site-list__item--search {
+    border-left: 1px solid $border-color-header;
+    border-right: 1px solid $border-color-header;
+    border-bottom: 1px solid $border-color-header;
+  }
+}
+
+@media (min-width: $desktop) {
+  .site-list--user {
+    order: 3;
+  }
 }

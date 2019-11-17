@@ -1,7 +1,126 @@
 .page-header {
-  background-color: #{$white};
-  color: #{$black};
-  font-size: 17px;
-  font-weight: 700;
+  @include text-big;
+  width: 320px;
+  background-color: $white;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.page-header__logo {
+  display: block;
+  padding: 15px 95px 25px;
+  border-bottom: 1px solid $border-color-header;
+}
+
+.page-header__input-search {
+  color: $black;
+  background-color: transparent;
+  padding: 30px 75px;
+  border: none;
+}
+
+.page-header__input-search::placeholder {
+  @include text-big;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.page-header__search-button {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 25px;
+  left: 30px;
+  background: transparent;
+  opacity: 0.2;
+  padding: 0;
+  border: none;
+}
+
+.page-header__cart {
+  display: block;
+  min-height: 76px;
+  color: $black;
+  padding: 30px 75px;
+}
+
+.page-header__cart-button {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 25px;
+  left: 30px;
+  background: transparent;
+  opacity: 0.2;
+  padding: 0;
+  border: none;
+}
+
+.page-header__text {
+  display: none;
+  color: $grey;
+  font-size: 15px;
+  font-weight: 400;
   line-height: 24px;
+  padding: 20px 50px;
+  background-color: $bg-color-light;
+  margin: 0;
+  flex-grow: 1;
+}
+
+@media (min-width: $tablet) {
+  .page-header {
+    width: $tablet;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .page-header__logo {
+    flex-grow: 1;
+  }
+
+  .page-header__input-search {
+    width: 85px;
+    padding: 0;
+  }
+
+  .page-header__input-search::placeholder {
+    visibility: hidden;
+  }
+
+  .page-header__cart {
+    width: 320px;
+  }
+
+  .page-header__text {
+    display: block;
+    order: 4;
+    text-align: right;
+    padding-right: 45px;
+    margin-left: auto;
+
+    &--grey {
+      background-color: $light-grey;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-header {
+    width: $desktop;
+  }
+
+  .page-header__logo {
+    display: block;
+    order: 2;
+    border-bottom: 1px solid $border-color-header;
+  }
+
+  .page-header__text {
+    text-align: right;
+    order: 5;
+  }
+
+  .page-header__cart {
+    min-height: 91px;
+  }
 }

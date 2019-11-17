@@ -1,10 +1,28 @@
+.form-main {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .form-main__header {
   padding: 76px 40px;
-  background-color: #{$light-grey};
+  background-color: $light-grey;
 }
 
 .form-main__text {
-  color: #{$grey};
+  color: $grey;
   font-size: 13px;
   line-height: 24px;
+  margin: 30px;
+}
+
+@media (min-width: $tablet) {
+  .form-main {
+    width: $tablet;
+  }
+}
+
+@media (min-width: $desktop) {
+  .form-main {
+    width: $desktop;
+  }
 }

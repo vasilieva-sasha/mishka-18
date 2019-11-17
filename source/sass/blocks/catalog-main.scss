@@ -1,4 +1,26 @@
+.catalog-main {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .catalog-main__header {
   padding: 76px 40px;
   background-color: $light-grey;
+}
+
+@media (min-width: $tablet) {
+  .catalog-main {
+    width: $tablet;
+  }
+
+  .catalog-main__header {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop) {
+  .catalog-main {
+    width: $desktop;
+  }
 }

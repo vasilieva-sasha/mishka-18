@@ -1,4 +1,24 @@
+.copyright {
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .copyright__text {
+  display: block;
   font-size: 19px;
   line-height: 18px;
+  margin: 0 15px;
+}
+
+.copyright__link {
+  display: block;
+  margin: 0 15px;
+}
+
+@media (min-width: $tablet) {
+  .copyright {
+    margin: 0;
+  }
 }

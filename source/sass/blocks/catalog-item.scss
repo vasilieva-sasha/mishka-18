@@ -1,5 +1,15 @@
-.catalog-item__wrapper {
+.catalog-item {
+  margin-top: 30px;
   border: 1px solid $silver;
+}
+
+.catalog-item__photo {
+  margin: 0;
+}
+
+.catalog-item__wrapper {
+  margin: 0;
+  padding: 0 25px;
 }
 
 .catalog-item__header {
@@ -14,6 +24,22 @@
 }
 
 .catalog-item__price {
+  display: block;
+  width: 207px;
   font-size: 15px;
   line-height: 24px;
+  padding: 25px 0;
+  border-top: 1px solid $silver;
+}
+
+@media (min-width: $tablet) {
+  .catalog-item {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop) {
+  .catalog-item {
+    display: block;
+  }
 }

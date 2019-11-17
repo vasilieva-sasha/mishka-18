@@ -35,6 +35,10 @@
     font-size: 15px;
     font-weight: 700;
     order: 2;
+
+    &--catalog {
+      background-color: $light-grey;
+    }
   }
 
   .navigation__item {
@@ -66,5 +70,9 @@
     @include text-big;
     min-height: 90px;
     padding: 24px 34px;
+  }
+
+  .navigation__menu--catalog {
+    background-color: $white;
   }
 }

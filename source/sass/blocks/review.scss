@@ -1,5 +1,7 @@
 .review {
-  padding: 25px;
+  width: 260px;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .review__item {
@@ -8,24 +10,21 @@
 
 .review__text {
   width: 260px;
-  color: $grey;
+  color: $text-color;
   font-size: 15px;
   line-height: 30px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin: 25px 0;
 }
 
 .review__author-name {
-  color: $black;
-  font-size: 17px;
-  font-weight: 700;
+  @include text-dark;
   line-height: 24px;
   font-style: normal;
 }
 
 .review__author-contact {
   display: block;
-  color: $grey;
+  color: $text-color;
   font-size: 17px;
   line-height: 30px;
 }
@@ -33,7 +32,7 @@
 .review__toggle {
   display: flex;
   padding: 40px 0;
-  margin-bottom: 10px;
+  margin: 0 0 10px;
 }
 
 .review__prev {
@@ -53,6 +52,7 @@
 
 @media (min-width: $tablet) {
   .review {
+    width: 100%;
     position: relative;
     display: block;
     background: url("../img/review@1x.jpg") no-repeat left 10px;
@@ -61,8 +61,7 @@
 
   .review__text {
     width: 650px;
-    margin-top: 50px;
-    margin-bottom: 55px;
+    margin: 50px 0 55px;
   }
 
   .review__toggle {
@@ -77,10 +76,10 @@
     position: absolute;
     right: 45px;
     top: 90px;
-    text-align: center;
-    padding-left: 40px;
     width: 174px;
-    margin-left: auto;
+    text-align: center;
+    padding: 0 0 0 40px;
+    margin: 0 0 0 auto;
   }
 }
 
@@ -88,15 +87,14 @@
   .review {
     width: 1054px;
     margin: 0 auto;
-    padding-top: 80px;
-    padding-left: 170px;
+    padding: 80px 0 0 170px;
   }
 
   .review__text {
     width: 780px;
     font-size: 17px;
     line-height: 30px;
-    margin-bottom: 35px;
+    margin: 0 0 35px;
   }
 
   .review__write {

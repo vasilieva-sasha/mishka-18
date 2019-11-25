@@ -1,5 +1,5 @@
 .page-footer {
-  background-color: $light-grey;
+  background-color: $catalog-color-light;
   display: flex;
   flex-direction: column;
   margin: 40px auto 0;
@@ -7,6 +7,10 @@
 
 .page-footer__logo {
   display: none;
+}
+
+.page-footer__copyright {
+  border-top: 1px solid $divider;
 }
 
 @media (min-width: $tablet) {

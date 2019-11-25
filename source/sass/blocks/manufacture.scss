@@ -1,6 +1,6 @@
 .manufacture {
-  border: 1px solid $silver;
   padding: 34px;
+  border: 1px solid $catalog-color;
 }
 
 .manufacture__header {
@@ -9,21 +9,21 @@
 }
 
 .manufacture__text {
-  color: $grey;
+  color: $text-color;
   font-size: 13px;
   line-height: 24px;
   padding: 34px 0;
 }
 
 .manufacture__video {
-  outline: 2px solid $green;
+  outline: 2px solid $design-color;
 }
 
 @media (min-width: $tablet) {
   .manufacture {
-    padding: 0 30px;
     display: flex;
     flex-direction: column;
+    padding: 0 30px;
   }
 
   .manufacture__video {
@@ -39,16 +39,16 @@
   }
 
   .manufacture__button {
-    order: 4;
     width: 588px;
     margin: 0 auto;
+    order: 4;
   }
 }
 
 @media (min-width: $desktop) {
   .manufacture {
-    flex-wrap: wrap;
     height: 460px;
+    flex-wrap: wrap;
   }
 
   .manufacture__video {

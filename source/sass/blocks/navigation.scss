@@ -8,9 +8,10 @@
 
 .navigation__link {
   display: block;
-  min-height: 76px;
+  width: 320px;
   padding: 30px 75px;
-  color: $black;
+  margin: 0 auto;
+  color: $text-color-dark;
 }
 
 .navigation__toggle {
@@ -19,15 +20,16 @@
   left: 200px;
   width: 20px;
   height: 2px;
-  background-color: $black;
+  background-color: $text-color-dark;
   border: none;
 }
 
 
 @media (min-width: $tablet) {
   .navigation {
-    order: 3;
     background-color: $bg-color-light;
+    flex-grow: 1;
+    order: 3;
   }
 
   .navigation__menu {
@@ -37,7 +39,7 @@
     order: 2;
 
     &--grey {
-      background-color: $light-grey;
+      background-color: $catalog-color-light;
     }
   }
 
@@ -46,16 +48,17 @@
   }
 
   .navigation__link {
+    width: auto;
     padding: 24px;
   }
 }
 
 @media (min-width: $desktop) {
   .navigation {
-    order: 1;
-    padding-left: 16px;
-    background-color: $white;
+    padding: 0 0 0 16px;
+    background-color: $bg-color;
     border-bottom: 1px solid $border-color-header;
+    order: 1;
   }
 
   .navigation__item {
@@ -67,12 +70,13 @@
   }
 
   .navigation__link {
-    @include text-big;
-    min-height: 90px;
+    @include text-dark;
     padding: 24px 34px;
+    line-height: 24px;
+    min-height: 90px;
   }
 
   .navigation__menu--grey {
-    background-color: $white;
+    background-color: $bg-color;
   }
 }

@@ -4,9 +4,14 @@
   margin: 0;
 }
 
-@mixin text-big {
-  color: $black;
+@mixin text-dark {
+  color: $text-color-dark;
   font-size: 17px;
   font-weight: 700;
-  line-height: 24px;
+}
+
+@mixin text {
+  color: $text-color;
+  font-size: 17px;
+  font-weight: 700;
 }

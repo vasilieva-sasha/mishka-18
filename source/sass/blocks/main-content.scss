@@ -4,44 +4,54 @@
 }
 
 .main-content__header {
+  width: 260px;
+  padding: 73px 0;
+  margin: 0 auto;
   text-align: center;
-  padding: 73px 37px;
 }
 
 .main-content__catalog {
   @include list-reset;
-  color: $white;
+  margin: 47px 0 0;
+  color: $bg-color;
   font-size: 19px;
   font-weight: 700;
   line-height: 24px;
-  margin-top: 47px;
 }
 
 .main-content__item--interior {
-  background: $green url("../img/icon-interior.svg") no-repeat 90%;
+  background: $design-color;
 }
 
 .main-content__item--toys {
-  background: $green-dark url("../img/icon-toy.svg") no-repeat 90%;
+  background: $design-color-dark;
 }
 
 .main-content__link {
   display: block;
-  width: 110px;
-  padding: 27px 30px;
-  color: $white;
+  width: 260px;
+  padding: 27px 130px 27px 0;
+  margin: 0 auto;
+  color: $bg-color;
+
+  &--interior {
+    background: $design-color url("../img/icon-interior.svg") no-repeat 100%;
+  }
+
+  &--toys {
+    background: $design-color-dark url("../img/icon-toy.svg") no-repeat 100%;
+  }
 }
 
 @media (min-width: $tablet) {
   .main-content {
-    width: $tablet;
     min-height: 670px;
     background: $bg-color-light url("../img/hero-tablet@1x.jpg") no-repeat 50% -80px;
   }
 
   .main-content__catalog {
     display: flex;
-    margin-top: 310px;
+    margin: 310px 0 0;
   }
 
   .main-content__item {
@@ -55,8 +65,8 @@
   .main-content {
     width: $desktop;
     min-height: 670px;
-    background: $bg-color-light url("../img/hero-desktop@1x.jpg") no-repeat 50% -80px;
     padding: 0 50px;
+    background: $bg-color-light url("../img/hero-desktop@1x.jpg") no-repeat 50% -80px;
   }
 
   .main-content__header {

@@ -1,17 +1,4 @@
 .page-main {
-  width: 320px;
   padding: 0;
   margin: 0 auto;
-}
-
-@media (min-width: $tablet) {
-  .page-main {
-    width: $tablet;
-  }
-}
-
-@media (min-width: $desktop) {
-  .page-main {
-    width: $desktop;
-  }
 }

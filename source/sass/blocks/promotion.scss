@@ -11,7 +11,7 @@
 
 .promotion__link {
   display: block;
-  color: $black;
+  color: $text-color-dark;
   font-size: 15px;
   font-weight: 700;
   line-height: 24px;
@@ -24,7 +24,7 @@
     order: 4;
 
     &--grey {
-      background-color: $light-grey;
+      background-color: $catalog-color-light;
     }
   }
 }

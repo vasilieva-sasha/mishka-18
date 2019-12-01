@@ -1,8 +1,12 @@
+.block-about {
+  width: 260px;
+  padding: 0;
+  margin: 0 auto;
+}
+
 .block-about__list {
   @include list-reset;
-  color: $black;
-  font-size: 17px;
-  font-weight: 700;
+  @include text-dark;
   line-height: 20px;
 }
 
@@ -42,11 +46,12 @@
 
 @media (min-width: $tablet) {
   .block-about {
-    margin-top: 50px;
+    width: 86%;
+    margin: 0 auto;
   }
 
   .block-about__header {
-    margin-bottom: 20px;
+    margin: 0 0 20px;
   }
 
   .block-about__list {
@@ -60,8 +65,7 @@
   .block-about__item {
     font-size: 20px;
     line-height: 22px;
-    padding-right: 60px;
-    padding-bottom: 55px;
+    padding: 0 60px 55px 0;
   }
 }
 
@@ -71,10 +75,10 @@
   }
 
   .block-about__header {
-    margin-left: 190px;
+    margin: 0 0 0 190px;
   }
 
   .block-about__list {
-    margin-left: 190px;
+    margin: 0 0 0 190px;
   }
 }

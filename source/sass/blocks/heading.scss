@@ -1,8 +1,8 @@
 .heading {
-  color: $black;
+  margin: 0 auto;
+  color: $text-color-dark;
   font-weight: 700;
   line-height: 30px;
-  margin: 0;
 }
 
 .heading--big {
@@ -46,13 +46,11 @@
 
   .heading--med {
     font-size: 53px;
-    font-weight: 700;
     line-height: 57px;
   }
 
   .heading--small {
     font-size: 53px;
-    font-weight: 700;
     line-height: 57px;
   }
 }

@@ -1,75 +1,67 @@
 .page-header {
-  @include text-big;
-  width: 320px;
-  background-color: $white;
+  @include text-dark;
+  line-height: 24px;
   margin: 0 auto;
   padding: 0;
+  background-color: $bg-color;
 }
 
 .page-header__logo {
-  display: block;
-  padding: 15px 95px 25px;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0 25px;
   border-bottom: 1px solid $border-color-header;
 }
 
 .page-header__input-search {
-  color: $black;
+  position: relative;
+  display: block;
+  width: 320px;
+  color: $text-color-dark;
   background-color: transparent;
-  padding: 30px 75px;
+  padding: 30px 30px;
+  margin: 0 auto 0 0;
   border: none;
 }
 
 .page-header__input-search::placeholder {
-  @include text-big;
+  @include text-dark;
+  line-height: 24px;
   font-family: "Open Sans", "Arial", sans-serif;
-}
-
-.page-header__search-button {
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  top: 25px;
-  left: 30px;
-  background: transparent;
-  opacity: 0.2;
-  padding: 0;
-  border: none;
 }
 
 .page-header__cart {
   display: block;
-  min-height: 76px;
-  color: $black;
-  padding: 30px 75px;
+  width: 320px;
+  padding: 30px 30px;
+  margin: 0 auto 0 0;
+  color: $text-color-dark;
 }
 
-.page-header__cart-button {
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  top: 25px;
-  left: 30px;
+.page-header__button {
+  flex-basis: 20%;
+  text-align: end;
   background: transparent;
   opacity: 0.2;
   padding: 0;
+  margin: 0 0 0 auto;
   border: none;
 }
 
 .page-header__text {
   display: none;
-  color: $grey;
+  flex-grow: 1;
+  padding: 20px 50px;
+  margin: 0;
+  color: $text-color;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
-  padding: 20px 50px;
   background-color: $bg-color-light;
-  margin: 0;
-  flex-grow: 1;
 }
 
 @media (min-width: $tablet) {
   .page-header {
-    width: $tablet;
     display: flex;
     flex-wrap: wrap;
   }
@@ -79,6 +71,7 @@
   }
 
   .page-header__input-search {
+    display: none;
     width: 85px;
     padding: 0;
   }
@@ -87,19 +80,23 @@
     visibility: hidden;
   }
 
+  .page-header__button--search {
+    margin: 0 auto;
+  }
+
   .page-header__cart {
     width: 320px;
   }
 
   .page-header__text {
     display: block;
-    order: 4;
+    padding: 25px 45px 0 0;
+    margin: 0 0 0 auto;
     text-align: right;
-    padding-right: 45px;
-    margin-left: auto;
+    order: 4;
 
     &--grey {
-      background-color: $light-grey;
+      background-color: $catalog-color-light;
     }
   }
 }
@@ -111,8 +108,8 @@
 
   .page-header__logo {
     display: block;
-    order: 2;
     border-bottom: 1px solid $border-color-header;
+    order: 2;
   }
 
   .page-header__text {

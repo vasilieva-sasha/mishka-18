@@ -3,17 +3,14 @@
 }
 
 .site-list__item {
+  display: flex;
   border-bottom: 1px solid $border-color-header;
-}
-
-.site-list__item--button {
-  position: relative;
 }
 
 @media (min-width: $tablet) {
   .site-list--user {
     display: flex;
-    margin-left: auto;
+    margin: 0 0 0 auto;
   }
 
   .site-list__item {
@@ -21,6 +18,7 @@
   }
 
   .site-list__item--search {
+    width: 85px;
     border-left: 1px solid $border-color-header;
     border-right: 1px solid $border-color-header;
     border-bottom: 1px solid $border-color-header;

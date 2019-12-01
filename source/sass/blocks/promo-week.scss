@@ -1,9 +1,11 @@
 .promo-week {
-  padding: 20px 30px;
+  width:81%;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .promo-week__adv {
-  color: $green;
+  color: $design-color;
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
@@ -11,31 +13,35 @@
 }
 
 .promo-week__info {
-  color: $grey;
+  color: $text-color;
   font-size: 15px;
   line-height: 24px;
-  padding-top: 5px;
-  margin-bottom: 20px;
+  padding: 5px 0 0;
+  margin: 0 0 20px;
 }
 
 .promo-week__price {
-  color: $grey;
+  color: $text-color;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 25px;
+  margin: 20px 0 25px;
 }
 
 .promo-week__header {
-  padding-top: 5px;
-  margin-bottom: 5px;
+  padding: 5px 0 0;
+  margin: 0 0 5px;
 }
 
 @media (min-width: $tablet) {
+  .promo-week {
+    width: 86%;
+  }
+
   .promo-week__wrapper {
     display: flex;
+    margin: 0 auto;
     justify-content: space-between;
   }
 
@@ -46,7 +52,7 @@
 
   .promo-week__image {
     float: right;
-    margin-top: -250px;
+    margin: -250px 0 0;
   }
 
   .promo-week__info {
@@ -65,10 +71,9 @@
 @media (min-width: $desktop) {
   .promo-week__wrapper {
     position: relative;
-    z-index: 2;
-    margin-top: 100px;
-    margin-bottom: 45px;
     width: 670px;
+    margin: 100px 0 45px;
+    z-index: 2;
   }
 
   .promo-week__header {
@@ -77,24 +82,22 @@
 
   .promo-week__adv {
     align-self: flex-end;
-    margin-left: 60px;
+    margin: 0 0 0 60px;
   }
 
   .promo-week__info {
     font-size: 17px;
     line-height: 30px;
-    margin-left: 195px;
-    margin-bottom: 45px;
+    margin: 0 0 45px 195px;
   }
 
   .promo-week__price {
     font-size: 20px;
     line-height: 24px;
-    margin-left: 195px;
-    margin-bottom: 30px;
+    margin: 0 0 30px 195px;
   }
 
   .promo-week__order {
-    margin-left: 195px;
+    margin: 0 0 0 195px;
   }
 }

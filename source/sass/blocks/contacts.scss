@@ -1,25 +1,26 @@
 .contacts {
-  margin-top: 65px;
-  padding-left: 25px;
+
 }
 
 .contacts__table {
-  color: $grey;
+  width: 260px;
+  color: $text-color;
   font-size: 15px;
   line-height: 30px;
-  margin: 20px 0;
+  margin: 20px auto;
 }
 
 .contacts__row {
   display: flex;
 }
 
-.contacts__heading {
-  font: inherit;
+.contacts__header {
+  width: 260px;
+  margin: 0 auto;
 }
 
 .contacts__detail {
-  padding-left: 40px;
+  padding: 0 0 0 30px;
 }
 
 .contacts__address {
@@ -28,24 +29,29 @@
 
 .contacts__e-mail {
   color: inherit;
-  padding-bottom: 4px;
-  box-shadow: 0 1px $green;
+  padding: 0 0 4px;
+  box-shadow: 0 1px $design-color;
+}
+
+.contacts__write-us {
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet) {
   .contacts {
-    margin-top: 100px;
+    width: 86%;
+    margin: 0 auto;
   }
 
   .contacts__table {
     display: flex;
-    margin-top: 50px;
+    margin: 50px 0 0;
     font-size: 17px;
     vertical-align: top;
   }
 
   .contacts__row {
-    margin-right: 40px;
+    margin: 0 40px 0 0;
   }
 
   .contacts__heading {
@@ -56,8 +62,8 @@
     margin: 0;
   }
 
-  .contacts__map {
-    margin-top: 40px;
+  .contacts__map iframe {
+    width: 100vw;
   }
 
   .contacts__write-us {

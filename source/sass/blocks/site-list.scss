@@ -1,5 +1,9 @@
 .site-list {
   @include list-reset;
+
+  &--closed {
+    display: none;
+  }
 }
 
 .site-list__item {

@@ -1,5 +1,9 @@
 .navigation__menu {
   @include list-reset;
+
+  &--closed {
+    display: none;
+  }
 }
 
 .navigation__item {
@@ -15,15 +19,52 @@
 }
 
 .navigation__toggle {
-  position: absolute;
-  top: 40px;
-  left: 200px;
-  width: 20px;
-  height: 2px;
-  background-color: $text-color-dark;
-  border: none;
+  display: none;
 }
 
+@media (max-width: $mobile) {
+  .navigation__toggle {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 20px;
+    height: 2px;
+    background-color: $text-color-dark;
+    border: 0 none;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      margin-left: -10px;
+      width: 20px;
+      height: 2px;
+      background-color: $text-color-dark;
+    }
+
+    &::before {
+      margin-top: 4px;
+    }
+
+    &::after {
+      margin-top: -6px;
+    }
+  }
+
+  .navigation__toggle--opened {
+    transform: translateY(8px) rotate(-45deg);
+
+    &::before {
+      transform: translateY(-4px) rotate(90deg);
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}
 
 @media (min-width: $tablet) {
   .navigation {

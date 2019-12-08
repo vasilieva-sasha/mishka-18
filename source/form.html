@@ -49,27 +49,27 @@
         <fieldset class="form__type fieldset">
           <div class="form__wrapper">
             <legend class="form__legend">Тип</legend>
-            <label class="form__label" for="accessories"><input class="form__input input-radio" type="radio" id="accessories" checked>Аксессуар для интерьера</label>
-            <label class="form__label" for="toy"><input class="form__input input-radio" type="radio" id="toy">Детская игрушка</label>
+            <label class="form__label form__label--radio form__label--acc" for="accessories"><input class="form__input input-radio visually-hidden" type="radio" id="accessories" checked>Аксессуар для интерьера</label>
+            <label class="form__label form__label--radio" for="toy"><input class="form__input input-radio visually-hidden" type="radio" id="toy">Детская игрушка</label>
           </div>
         </fieldset>
         <fieldset class="form__color fieldset">
           <div class="form__wrapper">
             <legend class="form__legend">Цвет</legend>
-            <label class="form__label" for="white"><input class="form__input input-checkbox" type="checkbox" name="color" value="white" id="white" checked>Белый</label>
-            <label class="form__label" for="grey"><input class="form__input input-checkbox" type="checkbox" name="color" value="grey" id="grey" checked>Серый</label>
-            <label class="form__label" for="blue"><input class="form__input input-checkbox" type="checkbox" name="color" value="blue" id="blue">«Тиффани»</label>
-            <label class="form__label" for="black"><input class="form__input input-checkbox" type="checkbox" name="color" value="black" id="black">Черный</label>
-            <label class="form__label" for="pink"><input class="form__input input-checkbox" type="checkbox" name="color" value="pink" id="pink">Розовый</label>
-            <label class="form__label" for="orange"><input class="form__input input-checkbox" type="checkbox" name="color" value="orange" id="orange">Оранжевый</label>
+            <label class="form__label form__label--checkbox" for="white"><input class="form__input input-checkbox visually-hidden" type="checkbox" name="color" value="white" id="white" checked>Белый</label>
+            <label class="form__label form__label--checkbox" for="grey"><input class="form__input input-checkbox visually-hidden" type="checkbox" name="color" value="grey" id="grey" checked>Серый</label>
+            <label class="form__label form__label--checkbox" for="blue"><input class="form__input input-checkbox visually-hidden" type="checkbox" name="color" value="blue" id="blue">«Тиффани»</label>
+            <label class="form__label form__label--checkbox" for="black"><input class="form__input input-checkbox visually-hidden" type="checkbox" name="color" value="black" id="black">Черный</label>
+            <label class="form__label form__label--checkbox" for="pink"><input class="form__input input-checkbox visually-hidden" type="checkbox" name="color" value="pink" id="pink">Розовый</label>
+            <label class="form__label form__label--checkbox" for="orange"><input class="form__input input-checkbox visually-hidden" type="checkbox" name="color" value="orange" id="orange">Оранжевый</label>
           </div>
         </fieldset>
         <fieldset class="form__name fieldset">
           <div class="form__wrapper">
             <legend class="form__legend">ФИО</legend>
-            <label class="form__label" for="name">Имя:<input class="form__input input-name" type="text" name="name" id="name" placeholder="Введите ваше имя*"></label>
-            <label class="form__label" for="last-name">Фамилия:<input class="form__input input-name" name="last-name" type="text" id="last-name" placeholder="Укажите фамилию*"></label>
-            <label class="form__label" for="middle-name">Отчество:<input class="form__input input-name" name="middle-name" type="text" id="middle-name" placeholder="Отчество, если желаете"></label>
+            <label class="form__label form__label--name" for="name">Имя:</label><input class="form__input input-name" type="text" name="name" id="name" placeholder="Введите ваше имя*">
+            <label class="form__label form__label--name" for="last-name">Фамилия:</label><input class="form__input input-name" name="last-name" type="text" id="last-name" placeholder="Укажите фамилию*">
+            <label class="form__label form__label--name" for="middle-name">Отчество:</label><input class="form__input input-name" name="middle-name" type="text" id="middle-name" placeholder="Отчество, если желаете">
           </div>
         </fieldset>
         <fieldset class="form__tel fieldset">
@@ -140,5 +140,6 @@
         </a>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

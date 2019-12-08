@@ -1,18 +1,20 @@
 .form-main {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .form-main__header {
-  padding: 76px 40px;
+  padding: 70px 40px 75px;
   background-color: $catalog-color-light;
+  margin: 0 0 24px;
 }
 
 .form-main__text {
   color: $text-color;
   font-size: 13px;
   line-height: 24px;
-  margin: 30px;
+  padding: 0 15% 0 9.4%;
+  margin: 0;
 }
 
 @media (min-width: $tablet) {

@@ -1,5 +1,5 @@
 .form {
-  padding: 0 30px;
+  padding: 0 9.3%;
 }
 
 .form__legend {
@@ -8,13 +8,94 @@
   font-weight: 700;
   line-height: 16px;
   padding: 20px 0;
+  margin: 0 0 10px;
   text-transform: uppercase;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 198px;
+    height: 1px;
+    margin: -7px 0 0 62px;
+    background-color: $radio-color;
+  }
 }
 
 .form__label {
   @include text-dark;
+  position: relative;
   line-height: 18px;
-  padding: 10px 0;
+  padding: 10px 0 10px 25%;
+
+  &--radio {
+    margin: 0 0 8px 0;
+  }
+
+  &--radio::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border: 2px solid $text-color;
+    border-radius: 50%;
+  }
+
+  &--acc::before {
+    top: 2px;
+  }
+
+  &--acc::after {
+    top: 13px;
+  }
+
+  &--checkbox {
+    margin: 0 0 23.5px;
+  }
+
+  &--checkbox:last-of-type {
+    margin: 0 0 9px;
+  }
+
+  &--checkbox::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 39px;
+    border: 2px solid $text-color;
+  }
+
+  &--name {
+    padding: 0;
+  }
+}
+
+.input-radio:checked ~ .form__label--radio::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 12px;
+  bottom: 10px;
+  width: 16px;
+  height: 16px;
+  background-color: $radio-color;
+  border-radius: 50%;
+}
+
+.input-checkbox:checked ~ .form__label--checkbox::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 11px;
+  top: 13px;
+  width: 22px;
+  height: 16px;
+  background: url("../../img/icon-tick.svg") no-repeat;
 }
 
 .form__small {
@@ -26,6 +107,7 @@
 .form__wrapper {
   display: flex;
   flex-direction: column;
+  margin: 0 0 5px;
 }
 
 @media (min-width: $tablet) {

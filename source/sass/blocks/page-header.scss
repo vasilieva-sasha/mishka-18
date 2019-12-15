@@ -67,7 +67,9 @@
   }
 
   .page-header__logo {
-    flex-grow: 1;
+    flex: 1 0 44%;
+    padding: 15px 0 25px 6.2%;
+    justify-content: start;
   }
 
   .page-header__input-search {
@@ -90,7 +92,7 @@
 
   .page-header__text {
     display: block;
-    padding: 25px 45px 0 0;
+    padding: 20px 6.2% 0 0;
     margin: 0 0 0 auto;
     text-align: right;
     order: 4;
@@ -108,6 +110,7 @@
 
   .page-header__logo {
     display: block;
+    flex: none;
     border-bottom: 1px solid $border-color-header;
     order: 2;
   }

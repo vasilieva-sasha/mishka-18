@@ -19,7 +19,20 @@
 
 @media (min-width: $tablet) {
   .form-main {
-    width: $tablet;
+    width: 100%;
+  }
+
+  .form-main__header {
+    text-align: center;
+    padding: 30px 3.26% 80px;
+    margin: 0 0 75px;
+  }
+
+  .form-main__text {
+    font-size: 17px;
+    line-height: 30px;
+    padding: 0 6.5%;
+    margin: 0 0 52px;
   }
 }
 

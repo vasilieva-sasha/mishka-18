@@ -1,5 +1,6 @@
-.form {
-  padding: 0 9.3%;
+.form__type,
+.form__color {
+  @include list-reset;
 }
 
 .form__legend {
@@ -11,18 +12,60 @@
   margin: 0 0 10px;
   text-transform: uppercase;
 
-  &::after {
-    content: "";
-    display: block;
-    width: 198px;
+  &--tel {
+    padding: 18px 0 14px;
+    margin: 0;
+  }
+
+  &--mail {
+    padding: 10px 0 14px;
+    margin: 0;
+  }
+
+  &--text {
+    padding: 10px 0 20px;
+  }
+}
+
+.form__input {
+  width: 260px;
+  min-height: 52px;
+  padding: 15px 0;
+  margin: 0 0 17px;
+  border: 0 none;
+  box-shadow: inset 0 -2px 0 0 $text-color-dark;
+
+  &--name:last-of-type {
+    margin: 0 0 8px;
+  }
+
+  &--text {
+    min-height: 142px;
+    padding: 15px;
+    margin: 0 0 10px;
+    border: 2px solid $text-color;
+    box-shadow: none;
+  }
+
+  &--hidden {
+    position: absolute;
+    width: 1px;
     height: 1px;
-    margin: -7px 0 0 62px;
-    background-color: $radio-color;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+
+  &::placeholder {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-size: 17px;
+    opacity: 0.3;
+    color: $text-color;
   }
 }
 
 .form__label {
   @include text-dark;
+  display: block;
   position: relative;
   line-height: 18px;
   padding: 10px 0 10px 25%;
@@ -41,6 +84,12 @@
     height: 40px;
     border: 2px solid $text-color;
     border-radius: 50%;
+  }
+
+  &--radio::after {
+    content: "";
+    display: block;
+    position: absolute;
   }
 
   &--acc::before {
@@ -71,11 +120,11 @@
   }
 
   &--name {
-    padding: 0;
+    padding: 5px 0 0;
   }
 }
 
-.input-radio:checked ~ .form__label--radio::after {
+.form__input--radio:checked ~ .form__label--radio::after {
   content: "";
   display: block;
   position: absolute;
@@ -87,7 +136,7 @@
   border-radius: 50%;
 }
 
-.input-checkbox:checked ~ .form__label--checkbox::after {
+.form__input--checkbox:checked ~ .form__label--checkbox::after {
   content: "";
   display: block;
   position: absolute;
@@ -99,9 +148,11 @@
 }
 
 .form__small {
+  display: block;
   color: $text-color;
   font-size: 14px;
   line-height: 16px;
+  margin: 0 0 30px;
 }
 
 .form__wrapper {
@@ -110,27 +161,57 @@
   margin: 0 0 5px;
 }
 
+.form__button {
+  margin: 0 0 55px;
+}
+
+@media (max-width: $mobile) {
+  .form {
+    padding: 0 9.3%;
+  }
+
+  .form__legend::after {
+    content: "";
+    display: block;
+    width: 198px;
+    height: 1px;
+    margin: -7px 0 0 62px;
+    background-color: $radio-color;
+  }
+
+  .form__legend--mail::after {
+    width: 179px;
+    margin: -7px 0 0 82px;
+  }
+}
+
 @media (min-width: $tablet) {
   .form__wrapper {
-    &--tel {
-      flex-direction: row;
+    flex-direction: row;
+    padding: 0 6.5%;
+  }
+
+  .form__legend {
+    flex: 1 0 25%;
+  }
+
+  .form__type {
+    flex: 1 0 75%;
+  }
+
+  .form__label {
+    font-size: 19px;
+    padding: 18px;
+
+    &--radio {
+      padding: 18px 16%;
+      margin: 0 0 25px;
     }
 
-    &--mail {
-      flex-direction: row;
+    &--radio::before {
+      width: 52px;
+      height: 52px;
     }
-  }
-
-  .form__color {
-    background-color: $catalog-color-light;
-  }
-
-  .form__tel {
-    background-color: $catalog-color-light;
-  }
-
-  .form__mail {
-    background-color: $catalog-color-light;
   }
 
   .form__small {

@@ -98,28 +98,32 @@
 
 @media (min-width: $desktop) {
   .navigation {
-    padding: 0 0 0 16px;
+    padding: 0 0 0 calc(50% - 575px);
     background-color: $bg-color;
     border-bottom: 1px solid $border-color-header;
     order: 1;
   }
 
-  .navigation__item {
-    border-bottom: none;
+  .navigation__menu {
+    padding: 0;
   }
 
-  .navigation__link--grey {
-    border-right: 1px solid $border-color-header;
+  .navigation__item {
+    border-bottom: none;
+
+    &--knitting {
+      border-left: 1px solid $border-color-header;
+    }
   }
 
   .navigation__link {
     @include text-dark;
-    padding: 24px 34px;
+    padding: 24px 40px;
     line-height: 24px;
     min-height: 90px;
-  }
 
-  .navigation__menu--grey {
-    background-color: $bg-color;
+    &--grey {
+      border-right: 1px solid $border-color-header;
+    }
   }
 }

@@ -1,5 +1,6 @@
 .form__type,
-.form__color {
+.form__color,
+.form__name {
   @include list-reset;
 }
 
@@ -210,8 +211,41 @@
 
     &--radio::before {
       width: 52px;
+      height: 53px;
+    }
+
+    &--checkbox {
+      padding: 18px 30%;
+      margin: 0 0 25px;
+    }
+
+    &--checkbox::before {
+      width: 54px;
       height: 52px;
     }
+  }
+
+  .form__color {
+    flex: 1 0 75%;
+    column-count: 2;
+  }
+
+  .form__name {
+    flex: 1 0 75%;
+  }
+
+  .form__input--text {
+    flex: 1 0 75%;
+  }
+
+  .form__input--tel {
+    flex: 1 0 75%;
+    background-color: transparent;
+  }
+
+  .form__input--mail {
+    flex: 1 0 75%;
+    background-color: transparent;
   }
 
   .form__small {

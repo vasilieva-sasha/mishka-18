@@ -105,7 +105,7 @@
 
 @media (min-width: $desktop) {
   .page-header {
-    width: $desktop;
+    width: 100%;
   }
 
   .page-header__logo {
@@ -113,11 +113,13 @@
     flex: none;
     border-bottom: 1px solid $border-color-header;
     order: 2;
+    padding: 5px 105px 0 0;
   }
 
   .page-header__text {
     text-align: right;
     order: 5;
+    padding: 20px calc(50% - 575px) 0 0;
   }
 
   .page-header__cart {

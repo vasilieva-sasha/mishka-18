@@ -63,7 +63,7 @@
 
 @media (min-width: $desktop) {
   .main-content {
-    width: $desktop;
+    width: 100%;
     min-height: 670px;
     padding: 0 50px;
     background: $bg-color-light url("../img/hero-desktop@1x.jpg") no-repeat 50% -80px;
@@ -71,6 +71,6 @@
 
   .main-content__header {
     text-align: center;
-    padding: 80px 170px;
+    width: 605px;
   }
 }

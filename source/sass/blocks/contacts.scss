@@ -79,6 +79,7 @@
     height: 640px;
     flex-direction: column;
     flex-wrap: wrap;
+    padding: 0 0 0 225px;
   }
 
   .contacts__table {
@@ -86,6 +87,12 @@
   }
 
   .contacts__map {
+    margin: 0 0 0 auto;
     order: 5;
+  }
+
+  .contacts__map iframe {
+    width: 525px;
+    height: 457px;
   }
 }

@@ -9,16 +9,16 @@
   <body>
     <header class="page-header">
       <a class="page-header__logo" href="index.html"><img src="img/logo-mobile.svg" alt="Логотип интернет-магазина Мишка"></a>
-      <nav class="navigation">
-        <button class="navigation__toggle" type="button"></button>
-        <ul class="navigation__menu navigation__menu--grey">
-          <li class="navigation__item navigation__item--grey"><a class="navigation__link navigation__link--grey" href="catalog.html">Каталог товаров</a></li>
+      <nav class="navigation navigation--opened">
+        <button class="navigation__toggle navigation__toggle--opened" type="button"></button>
+        <ul class="navigation__menu">
+          <li class="navigation__item navigation__item--catalog"><a class="navigation__link" href="catalog.html">Каталог товаров</a></li>
           <li class="navigation__item"><a class="navigation__link" href="form.html">Вязание на заказ</a></li>
         </ul>
       </nav>
       <ul class="site-list site-list--user">
         <li class="site-list__item site-list__item--button site-list__item--search">
-          <button class="page-header__button" type="button">
+          <button class="page-header__button page-header__button--search" type="button">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
               <path fill="#231F20" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
             </svg>
@@ -84,24 +84,32 @@
             </ul>
           </div>
         </fieldset>
-        <fieldset class="form__name fieldset">
+        <fieldset class="fieldset">
           <div class="form__wrapper">
             <legend class="form__legend">ФИО</legend>
-            <label class="form__label form__label--name" for="name">Имя:</label><input class="form__input form__input--name" type="text" name="name" id="name" placeholder="Введите ваше имя*">
-            <label class="form__label form__label--name" for="last-name">Фамилия:</label><input class="form__input form__input--name" name="last-name" type="text" id="last-name" placeholder="Укажите фамилию*">
-            <label class="form__label form__label--name" for="middle-name">Отчество:</label><input class="form__input form__input--name" name="middle-name" type="text" id="middle-name" placeholder="Отчество, если желаете">
+            <ul class="form__name">
+            <li>
+              <label class="form__label form__label--name" for="name">Имя:</label><input class="form__input form__input--name" type="text" name="name" id="name" placeholder="Введите ваше имя*">
+            </li>
+            <li>
+              <label class="form__label form__label--name" for="last-name">Фамилия:</label><input class="form__input form__input--name" name="last-name" type="text" id="last-name" placeholder="Укажите фамилию*">
+            </li>
+            <li>
+              <label class="form__label form__label--name" for="middle-name">Отчество:</label><input class="form__input form__input--name" name="middle-name" type="text" id="middle-name" placeholder="Отчество, если желаете">
+            </li>
+            </ul>
           </div>
         </fieldset>
         <fieldset class="form__tel fieldset fieldset--colored">
           <div class="form__wrapper form__wrapper--tel">
             <legend class="form__legend form__legend--tel">Тел</legend>
-            <input class="form__input" type="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+            <input class="form__input form__input--tel" type="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
           </div>
         </fieldset>
         <fieldset class="form__mail fieldset fieldset--colored">
           <div class="form__wrapper form__wrapper--mail">
             <legend class="form__legend form__legend--mail">E-mail</legend>
-            <input class="form__input" type="email" name="email" placeholder="Ваш Email*">
+            <input class="form__input form__input--mail" type="email" name="email" placeholder="Ваш Email*">
           </div>
         </fieldset>
         <fieldset class="form__text fieldset">

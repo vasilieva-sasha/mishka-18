@@ -110,19 +110,20 @@
 
   .page-header__logo {
     display: block;
+    height: 88px;
     flex: none;
     border-bottom: 1px solid $border-color-header;
     order: 2;
-    padding: 5px 105px 0 0;
+    padding: 10px 105px 0 0;
   }
 
   .page-header__text {
     text-align: right;
     order: 5;
-    padding: 20px calc(50% - 575px) 0 0;
+    padding: 20px calc(50% - 525px) 0 0;
   }
 
   .page-header__cart {
-    min-height: 91px;
+    min-height: 88px;
   }
 }

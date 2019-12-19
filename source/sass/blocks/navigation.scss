@@ -98,7 +98,8 @@
 
 @media (min-width: $desktop) {
   .navigation {
-    padding: 0 0 0 calc(50% - 575px);
+    height: 88px;
+    padding: 0 0 0 calc(50% - 550px);
     background-color: $bg-color;
     border-bottom: 1px solid $border-color-header;
     order: 1;
@@ -118,9 +119,9 @@
 
   .navigation__link {
     @include text-dark;
-    padding: 24px 40px;
+    padding: 30px 40px 30px 30px;
     line-height: 24px;
-    min-height: 90px;
+    min-height: 88px;
 
     &--grey {
       border-right: 1px solid $border-color-header;

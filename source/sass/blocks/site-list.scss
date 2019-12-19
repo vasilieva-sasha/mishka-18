@@ -29,8 +29,9 @@
 
 @media (min-width: $desktop) {
   .site-list--user {
+    height: 88px;
     order: 3;
-    padding: 0 calc(50% - 605px) 0 0;
-    border-bottom: 1px solid $border-color-header;;
+    padding: 0 calc(50% - 600px) 0 0;
+    border-bottom: 1px solid $border-color-header;
   }
 }

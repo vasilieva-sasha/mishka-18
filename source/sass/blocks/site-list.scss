@@ -13,7 +13,9 @@
 @media (min-width: $tablet) {
   .site-list--user {
     display: flex;
+    flex: 0 1 52%;
     margin: 0 0 0 auto;
+    border-bottom: 1px solid $border-color-header;
   }
 
   .site-list__item {
@@ -21,7 +23,7 @@
   }
 
   .site-list__item--search {
-    width: 85px;
+    width: 80px;
     border-left: 1px solid $border-color-header;
     border-right: 1px solid $border-color-header;
   }

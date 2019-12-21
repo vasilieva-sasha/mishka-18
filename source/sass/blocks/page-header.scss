@@ -62,13 +62,14 @@
 
 @media (min-width: $tablet) {
   .page-header {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
   }
 
   .page-header__logo {
-    flex: 1 0 44%;
-    padding: 15px 0 25px 6.2%;
+    flex-grow: 1;
+    padding: 20px 0 15px 6.2%;
     justify-content: start;
   }
 
@@ -87,12 +88,12 @@
   }
 
   .page-header__cart {
-    width: 320px;
+    width: 290px;
   }
 
   .page-header__text {
     display: block;
-    padding: 20px 6.2% 0 0;
+    padding: 18px 6.2% 0 0;
     margin: 0 0 0 auto;
     text-align: right;
     order: 4;

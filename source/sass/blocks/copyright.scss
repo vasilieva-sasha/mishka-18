@@ -21,5 +21,7 @@
 @media (min-width: $tablet) {
   .copyright {
     margin: 0;
+    align-items: center;
+    justify-content: flex-end;
   }
 }

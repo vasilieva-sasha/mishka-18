@@ -101,20 +101,45 @@
     height: 640px;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 0 0 0 225px;
+    padding: 0 calc(50% - 540px);
+    margin: 0 0 25px;
+  }
+
+  .contacts::before {
+    width: 1050px;
+    height: 23px;
+    left: calc(50% - 540px);
+  }
+
+  .contacts__header {
+    padding: 170px 0 0 185px;
   }
 
   .contacts__table {
     display: block;
+    width: 320px;
+    padding: 0 0 0 185px;
+  }
+
+  .contacts__heading {
+    flex: none;
   }
 
   .contacts__map {
-    margin: 0 0 0 auto;
+    position: static;
+    margin: 100px 20px 0 auto;
+    flex: 1 0 50%;
     order: 5;
   }
 
   .contacts__map iframe {
     width: 525px;
     height: 457px;
+  }
+
+  .contacts__write-us {
+    position: absolute;
+    left: 405px;
+    bottom: 35px;
   }
 }

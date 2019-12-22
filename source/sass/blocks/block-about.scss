@@ -83,17 +83,26 @@
 @media (min-width: $desktop) {
   .block-about {
     padding: 0 calc(50% - 540px);
+    margin: 0 0 10px;
   }
 
   .block-about::before {
-    width: 100%;
+    width: 1050px;
+    height: 23px;
+    left: calc(50% - 540px);
   }
 
   .block-about__header {
+    padding: 85px 0 50px;
     margin: 0 0 0 190px;
   }
 
   .block-about__list {
+    width: 700px;
     margin: 0 0 0 190px;
+  }
+
+  .block-about__item {
+    margin: 0;
   }
 }

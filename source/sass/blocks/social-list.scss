@@ -13,3 +13,9 @@
     align-items: center;
   }
 }
+
+@media (min-width: $desktop) {
+  .social-list {
+    padding: 30px 80px;
+  }
+}

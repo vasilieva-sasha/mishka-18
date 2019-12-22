@@ -86,15 +86,20 @@
 @media (min-width: $desktop) {
   .review {
     width: 1054px;
-    margin: 0 auto;
+    min-height: 457px;
+    margin: 0 auto 67px;
     padding: 80px 0 0 170px;
+  }
+
+  .review__header {
+    margin: 0 0 45px;
   }
 
   .review__text {
     width: 780px;
     font-size: 17px;
     line-height: 30px;
-    margin: 0 0 35px;
+    margin: 0 0 40px;
   }
 
   .review__write {
@@ -102,6 +107,7 @@
   }
 
   .review__toggle {
+    top: 280px;
     right: 5px;
   }
 }

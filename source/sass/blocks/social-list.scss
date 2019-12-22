@@ -6,3 +6,10 @@
   padding: 30px;
   margin: 0 auto;
 }
+
+@media (min-width: $tablet) {
+  .social-list {
+    flex: 1 0 33%;
+    align-items: center;
+  }
+}

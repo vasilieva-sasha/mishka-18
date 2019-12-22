@@ -46,32 +46,47 @@
 
 @media (min-width: $tablet) {
   .block-about {
-    width: 86%;
-    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    padding: 0 calc(50% - 294px) 0 calc(50% - 334px);
+  }
+
+  .block-about::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 15px;
+    left: 0;
+    top: 5px;
+    background: url("../../img/bg-zigzag-line.svg") no-repeat;
   }
 
   .block-about__header {
+    padding: 70px 0 30px;
     margin: 0 0 20px;
   }
 
   .block-about__list {
     height: 480px;
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    flex-wrap: wrap;
+    column-count: 2;
   }
 
   .block-about__item {
     font-size: 20px;
     line-height: 22px;
-    padding: 0 60px 55px 0;
+    padding: 55px 60px 55px 0;
+    background-position: 5px 0;
   }
 }
 
 @media (min-width: $desktop) {
   .block-about {
-    margin: 80px auto 0;
+    padding: 0 calc(50% - 540px);
+  }
+
+  .block-about::before {
+    width: 100%;
   }
 
   .block-about__header {

@@ -36,9 +36,10 @@
 
 @media (min-width: $tablet) {
   .promo-week {
-    width: 86%;
+    width: 100%;
     position: relative;
-    padding: 45px 0 0;
+    padding: 40px calc(50% - 334px) 0;
+    margin: 0 0 50px;
   }
 
   .promo-week::before {
@@ -46,7 +47,7 @@
     position: absolute;
     display: block;
     left: 0;
-    top: -115px;
+    top: -20px;
     width: 100%;
     height: 24px;
     background: url("../../img/bg-zigzag-fill.svg");
@@ -54,26 +55,33 @@
 
   .promo-week__wrapper {
     display: flex;
-    margin: 0 auto 60px;
+    margin: 0 auto 40px;
     justify-content: space-between;
   }
 
   .promo-week__adv {
     width: 80px;
     text-align: center;
+    padding: 12px 95px 0 0;
   }
 
   .promo-week__image {
     float: right;
-    margin: -250px 0 0;
+    margin: -290px 0 0;
   }
 
   .promo-week__info {
     width: 290px;
+    font-size: 17px;
+    line-height: 30px;
+    margin: 0 0 35px;
   }
 
   .promo-week__price {
     width: 290px;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 0 35px;
   }
 
   .promo-week__order {
@@ -89,7 +97,7 @@
 
   .promo-week::before {
     left: 0;
-    top: -110px;
+    top: -140px;
     width: 100%;
     height: 34px;
   }
@@ -97,7 +105,7 @@
   .promo-week__wrapper {
     position: relative;
     width: 670px;
-    margin: 100px 0 45px;
+    margin: 120px 0 45px;
     z-index: 2;
   }
 
@@ -127,6 +135,6 @@
   }
 
   .promo-week__image {
-    margin: -500px 0 0;
+    margin: -530px 20px 0 0;
   }
 }

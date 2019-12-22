@@ -2,7 +2,6 @@
   background-color: $catalog-color-light;
   display: flex;
   flex-direction: column;
-  margin: 40px auto 0;
 }
 
 .page-footer__logo {
@@ -15,13 +14,20 @@
 
 @media (min-width: $tablet) {
   .page-footer__logo {
-    display: block;
+    display: flex;
+    flex: 1 0 30%;
+    justify-content: center;
   }
 
   .page-footer {
     width: 100%;
+    min-height: 143px;
     flex-direction: row;
     justify-content: space-around;
+  }
+
+  .page-footer__copyright {
+    align-items: center;
   }
 }
 

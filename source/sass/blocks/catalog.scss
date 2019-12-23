@@ -3,6 +3,12 @@
   padding: 0 30px;
 }
 
+@media (min-width: $tablet) {
+  .catalog__list {
+    padding: 0 calc(50% - 334px);
+  }
+}
+
 @media (min-width: $desktop) {
   .catalog__list {
     display: flex;

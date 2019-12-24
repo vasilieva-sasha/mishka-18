@@ -37,6 +37,38 @@
 @media (min-width: $tablet) {
   .catalog-item {
     display: flex;
+    padding: 0;
+    margin: 0 0 50px;
+  }
+
+  .catalog-item__wrapper {
+    width: 100%;
+  }
+
+  .catalog-item__photo {
+    margin: 0 0 -5px;
+  }
+
+  .catalog-item__header {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 25px 0 0;
+    margin: 0 0 5px;
+  }
+
+  .catalog-item__info {
+    font-size: 15px;
+    line-height: 30px;
+    margin: 0 0 175px;
+  }
+
+  .catalog-item__price {
+    width: 100%;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 23px 50px 0 5px;
   }
 }
 

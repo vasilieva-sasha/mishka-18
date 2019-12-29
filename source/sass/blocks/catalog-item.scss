@@ -68,7 +68,7 @@
     font-size: 17px;
     font-weight: 700;
     line-height: 24px;
-    padding: 23px 50px 0 5px;
+    padding: 23px 50px 29px 5px;
   }
 }
 
@@ -76,5 +76,17 @@
   .catalog-item {
     display: block;
     flex-grow: 0;
+  }
+
+  .catalog-item__info {
+    margin: 0 0 40px;
+
+    &--min {
+      margin: 0 0 15px;
+    }
+  }
+
+  .catalog-item__price {
+    padding: 23px 50px 29px 0;
   }
 }

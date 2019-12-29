@@ -14,7 +14,7 @@
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
           <img src="img/logo-mobile.svg" alt="Логотип интернет-магазина Mishka">
         </picture>
-    </a>
+      </a>
       <nav class="navigation navigation--opened">
         <button class="navigation__toggle navigation__toggle--opened" type="button"></button>
         <ul class="navigation__menu">
@@ -178,14 +178,16 @@
       </div>
     </footer>
     <section class="modal">
-      <h2 class="modal__header heading heading--med">Добавить в корзину</h2>
+      <h2 class="modal__header heading heading--med">Добавить в&nbsp;корзину</h2>
       <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="modal__size">
           <div class="modal__wrapper">
             <legend class="modal__legend">Выберите размер:</legend>
-            <input class="modal__input" type="radio" name="small" aria-label="маленький размер" checked>
-            <input class="modal__input" type="radio" name="middle" aria-label="средний размер">
-            <input class="modal__input" type="radio" name="large" aria-label="большой размер">
+            <ul class="modal__list">
+              <li><label class="modal__label"><input class="modal__input" type="radio" name="small" aria-label="маленький размер" checked>s</label></li>
+              <li><label class="modal__label"><input class="modal__input" type="radio" name="middle" aria-label="средний размер">m</label></li>
+              <li><label class="modal__label"><input class="modal__input" type="radio" name="large" aria-label="большой размер">l</label></li>
+            </ul>
           </div>
         </fieldset>
         <button class="modal__button button button--green" type="submit">Добавить</button>

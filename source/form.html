@@ -8,7 +8,13 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html"><img src="img/logo-mobile.svg" alt="Логотип интернет-магазина Мишка"></a>
+      <a class="page-header__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img src="img/logo-mobile.svg" alt="Логотип интернет-магазина Mishka">
+        </picture>
+      </a>
       <nav class="navigation navigation--opened">
         <button class="navigation__toggle navigation__toggle--opened" type="button"></button>
         <ul class="navigation__menu navigation__menu--grey">
@@ -60,7 +66,7 @@
           </div>
         </fieldset>
         <fieldset class="fieldset fieldset--colored">
-          <div class="form__wrapper">
+          <div class="form__wrapper form__wrapper--color">
             <legend class="form__legend">Цвет</legend>
             <ul class="form__color">
               <li>
@@ -88,13 +94,13 @@
           <div class="form__wrapper">
             <legend class="form__legend">ФИО</legend>
             <ul class="form__name">
-            <li>
+            <li class="form__list-item">
               <label class="form__label form__label--name" for="name">Имя:</label><input class="form__input form__input--name" type="text" name="name" id="name" placeholder="Введите ваше имя*">
             </li>
-            <li>
+            <li class="form__list-item">
               <label class="form__label form__label--name" for="last-name">Фамилия:</label><input class="form__input form__input--name" name="last-name" type="text" id="last-name" placeholder="Укажите фамилию*">
             </li>
-            <li>
+            <li class="form__list-item">
               <label class="form__label form__label--name" for="middle-name">Отчество:</label><input class="form__input form__input--name" name="middle-name" type="text" id="middle-name" placeholder="Отчество, если желаете">
             </li>
             </ul>
@@ -113,7 +119,7 @@
           </div>
         </fieldset>
         <fieldset class="form__text fieldset">
-          <div class="form__wrapper">
+          <div class="form__wrapper form__wrapper--text">
             <legend class="form__legend form__legend--text">Доп</legend>
             <textarea class="form__input form__input--text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>

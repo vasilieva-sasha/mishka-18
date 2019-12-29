@@ -40,7 +40,7 @@
           <a class="page-header__cart" href="#">Корзина: пока пуста</a>
         </li>
       </ul>
-      <ul class="page-header__promotion promotion">
+      <ul class="page-header__promotion promotion promotion--grey">
         <li class="promotion__item"><a class="promotion__link" href="#">Новые поступления</a></li>
         <li class="promotion__item"><a class="promotion__link" href="#">Распродажа</a></li>
       </ul>
@@ -86,7 +86,7 @@
             </picture>
             <div class="catalog-item__wrapper">
               <h3 class="catalog-item__header">Большая корзинка <br>для игрушек</h3>
-              <p class="catalog-item__info">
+              <p class="catalog-item__info catalog-item__info--min">
                 Диаметр 30 см, высота 30 см
               </p>
               <b class="catalog-item__price">1 500 руб.</b>
@@ -102,7 +102,7 @@
           <source src="video.webm" type="video/webm">
         </video>
         <p class="manufacture__text">
-          По просьбам наших любимых&nbsp;фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+          По просьбам наших любимых фолловеров&nbsp;мы сняли для вас подробное видео о том, как появляются наши товары.
         </p>
         <a class="manufacture__button button" href="#">Сделать заказ</a>
       </section>
@@ -154,14 +154,16 @@
       </div>
     </footer>
     <section class="modal">
-      <h2 class="modal__header heading heading--med">Добавить в корзину</h2>
+      <h2 class="modal__header heading heading--med">Добавить в&nbsp;корзину</h2>
       <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="modal__size">
           <div class="modal__wrapper">
             <legend class="modal__legend">Выберите размер:</legend>
-            <input class="modal__input" type="radio" name="small" checked>
-            <input class="modal__input" type="radio" name="middle">
-            <input class="modal__input" type="radio" name="large">
+            <ul class="modal__list">
+              <li><label class="modal__label"><input class="modal__input" type="radio" name="small" aria-label="маленький размер" checked>s</label></li>
+              <li><label class="modal__label"><input class="modal__input" type="radio" name="middle" aria-label="средний размер">m</label></li>
+              <li><label class="modal__label"><input class="modal__input" type="radio" name="large" aria-label="большой размер">l</label></li>
+            </ul>
           </div>
         </fieldset>
         <button class="modal__button button button--green" type="submit">Добавить</button>

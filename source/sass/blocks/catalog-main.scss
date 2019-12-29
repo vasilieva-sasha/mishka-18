@@ -27,13 +27,22 @@
       bottom: -2px;
       width: 100%;
       height: 24px;
-      background: url("../../img/bg-zigzag-fill.svg");
+      background: url("../img/bg-zigzag-fill.svg");
     }
   }
 }
 
 @media (min-width: $desktop) {
   .catalog-main {
-    width: $desktop;
+    width: 100%;
+  }
+
+  .catalog-main__header {
+    padding: 32px 0 120px;
+    margin: 0 0 110px;
+
+    &::after {
+      height: 34px;
+    }
   }
 }

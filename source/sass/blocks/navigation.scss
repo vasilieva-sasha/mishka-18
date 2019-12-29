@@ -107,6 +107,10 @@
 
   .navigation__menu {
     padding: 0;
+
+    &--grey {
+      background: $bg-color;
+    }
   }
 
   .navigation__item {

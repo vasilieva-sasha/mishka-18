@@ -4,6 +4,10 @@
   &--closed {
     display: none;
   }
+
+  &--opened {
+    display: block;
+  }
 }
 
 .site-list__item {
@@ -32,9 +36,9 @@
 @media (min-width: $desktop) {
   .site-list--user {
     height: 88px;
-    flex: 1 0 38%;
+    flex: 1 0 25%;
     order: 3;
-    padding: 0 calc(50% - 600px) 0 0;
+    padding: 0 calc(50% - 570px) 0 0;
     margin: 0;
     border-bottom: 1px solid $border-color-header;
   }

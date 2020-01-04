@@ -1,5 +1,17 @@
 .contacts {
+  width: 100%;
+  position: relative;
+}
 
+.contacts::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 6px;
+  left: 0;
+  top: 0;
+  background: url("../img/bg-zigzag-line.svg") repeat-x;
 }
 
 .contacts__table {
@@ -7,7 +19,7 @@
   color: $text-color;
   font-size: 15px;
   line-height: 30px;
-  margin: 20px auto;
+  margin: 0 auto 40px;
 }
 
 .contacts__row {
@@ -16,7 +28,8 @@
 
 .contacts__header {
   width: 260px;
-  margin: 0 auto;
+  padding: 50px 0 0;
+  margin: 0 auto 10px;
 }
 
 .contacts__detail {
@@ -25,6 +38,7 @@
 
 .contacts__address {
   font-style: normal;
+  padding: 15px 0 0;
 }
 
 .contacts__e-mail {
@@ -33,21 +47,45 @@
   box-shadow: 0 1px $design-color;
 }
 
+.contacts__map {
+  width: 100%;
+  margin: 0 0 35px;
+}
+
+.contacts__map iframe {
+  width: 100%;
+  height: 457px;
+}
+
 .contacts__write-us {
-  margin: 0 auto;
+  margin: 0 auto 40px;
 }
 
 @media (min-width: $tablet) {
   .contacts {
-    width: 86%;
-    margin: 0 auto;
+    width: 100%;
+    padding: 0 calc(50% - 334px);
+    margin: 0 0 50px;
+  }
+
+  .contacts::before {
+    content: "";
+    height: 15px;
+    top: 5px;
+    background: url("../img/bg-zigzag-line.svg") no-repeat;
+  }
+
+  .contacts__header {
+    padding: 85px 0 0;
+    margin: 0 0 45px;
   }
 
   .contacts__table {
     display: flex;
-    margin: 50px 0 0;
+    width: 650px;
     font-size: 17px;
     vertical-align: top;
+    margin: 0 0 30px;
   }
 
   .contacts__row {
@@ -56,14 +94,21 @@
 
   .contacts__heading {
     margin: 0;
+    flex: 1 0 20%;
   }
 
   .contacts__detail {
     margin: 0;
   }
 
+  .contacts__map {
+    position: relative;
+    margin: 0 0 0 calc(-50% + 285px);
+  }
+
   .contacts__map iframe {
     width: 100vw;
+    height: 457px;
   }
 
   .contacts__write-us {
@@ -79,13 +124,45 @@
     height: 640px;
     flex-direction: column;
     flex-wrap: wrap;
+    padding: 0 calc(50% - 540px);
+    margin: 0 0 25px;
+  }
+
+  .contacts::before {
+    width: 1050px;
+    height: 23px;
+    left: calc(50% - 540px);
+  }
+
+  .contacts__header {
+    padding: 170px 0 0 185px;
   }
 
   .contacts__table {
     display: block;
+    width: 320px;
+    padding: 0 0 0 185px;
+  }
+
+  .contacts__heading {
+    flex: none;
   }
 
   .contacts__map {
+    position: static;
+    margin: 100px 20px 0 200px;
+    flex: 1 0 50%;
     order: 5;
+  }
+
+  .contacts__map iframe {
+    width: 525px;
+    height: 457px;
+  }
+
+  .contacts__write-us {
+    position: absolute;
+    left: 405px;
+    bottom: 35px;
   }
 }

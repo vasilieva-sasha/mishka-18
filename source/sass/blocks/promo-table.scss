@@ -23,6 +23,17 @@
 @media (min-width: $tablet) {
   .promo-table {
     width: 290px;
+    margin: 0 0 55px;
+  }
+
+  .promo-table__detail {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 10px 0 10px 10px;
+  }
+
+  .promo-table__header {
+    padding: 10px 0;
   }
 }
 

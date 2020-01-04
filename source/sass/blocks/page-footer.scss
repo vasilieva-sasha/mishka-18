@@ -2,7 +2,6 @@
   background-color: $catalog-color-light;
   display: flex;
   flex-direction: column;
-  margin: 40px auto 0;
 }
 
 .page-footer__logo {
@@ -14,19 +13,37 @@
 }
 
 @media (min-width: $tablet) {
-  .page-footer__logo {
-    display: block;
-  }
-
   .page-footer {
-    width: $tablet;
+    width: 100%;
+    min-height: 143px;
     flex-direction: row;
     justify-content: space-around;
+    padding: 0 calc(50% - 334px);
+  }
+
+  .page-footer__logo {
+    display: flex;
+    flex: 1 0 30%;
   }
 }
 
 @media (min-width: $desktop) {
   .page-footer {
-    width: $desktop;
+    width: 100%;
+    padding: 0 calc(50% - 540px);
+    justify-content: space-between;
+  }
+
+  .page-footer__logo {
+    flex: 1 0 33%;
+  }
+
+  .page-footer__social {
+    flex: 1 0 33%;
+    padding: 30px 60px;
+  }
+
+  .page-footer__copyright {
+    flex: 0 1 33%;
   }
 }

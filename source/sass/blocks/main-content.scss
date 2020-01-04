@@ -1,5 +1,6 @@
 .main-content {
   min-height: 490px;
+  margin: 0 0 20px;
   background: $bg-color-light url("../img/hero-mobile@1x.jpg") no-repeat 50% -20px;
 }
 
@@ -45,32 +46,58 @@
 
 @media (min-width: $tablet) {
   .main-content {
-    min-height: 670px;
-    background: $bg-color-light url("../img/hero-tablet@1x.jpg") no-repeat 50% -80px;
+    min-height: 685px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: $bg-color-light url("../img/hero-tablet@1x.jpg") no-repeat 50% -60px;
+  }
+
+  .main-content__header {
+    width: 494px;
+    padding: 95px 0;
   }
 
   .main-content__catalog {
     display: flex;
-    margin: 310px 0 0;
+    padding: 0 calc(50% - 334px);
+    margin: 0;
   }
 
   .main-content__item {
-    flex-grow: 1;
+    width: 334px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .main-content__link {
+    padding: 30px 130px 30px 0;
   }
 }
 
 @media (min-width: $desktop) {
   .main-content {
-    width: $desktop;
-    min-height: 670px;
-    padding: 0 50px;
-    background: $bg-color-light url("../img/hero-desktop@1x.jpg") no-repeat 50% -80px;
+    width: 100%;
+    min-height: 678px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 calc(50% - 525px);
+    background: $bg-color-light url("../img/hero-desktop@1x.jpg") no-repeat 50% -65px;
   }
 
   .main-content__header {
     text-align: center;
-    padding: 80px 170px;
+    width: 605px;
+    padding: 90px 0;
+  }
+
+  .main-content__catalog {
+    padding: 0;
+    margin: 270px 0 0;
+  }
+
+  .main-content__item {
+    width: 525px;
   }
 }

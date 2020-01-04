@@ -1,5 +1,13 @@
 .navigation__menu {
   @include list-reset;
+
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
+  }
 }
 
 .navigation__item {
@@ -9,21 +17,63 @@
 .navigation__link {
   display: block;
   width: 320px;
-  padding: 30px 75px;
+  padding: 27px 75px;
   margin: 0 auto;
   color: $text-color-dark;
 }
 
 .navigation__toggle {
-  position: absolute;
-  top: 40px;
-  left: 200px;
-  width: 20px;
-  height: 2px;
-  background-color: $text-color-dark;
-  border: none;
+  display: none;
 }
 
+@media (max-width: $mobile) {
+  .navigation__toggle {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 9.37%;
+    width: 20px;
+    height: 2px;
+    padding: 0;
+    background-color: $text-color-dark;
+    border: 0 none;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      margin-left: -10px;
+      width: 20px;
+      height: 2px;
+      background-color: $text-color-dark;
+    }
+
+    &::before {
+      margin-top: -5.5px;
+    }
+
+    &::after {
+      margin-top: 4px;
+    }
+  }
+
+  .navigation__toggle--opened {
+    width: 1px;
+    height: 1px;
+    background-color: transparent;
+
+    &::before {
+      width: 27px;
+      transform: translateX(-15px) translateY(7px) rotate(45deg);
+    }
+
+    &::after {
+      width: 27px;
+      transform: translateX(-15px) translateY(-3px) rotate(-45deg);
+    }
+  }
+}
 
 @media (min-width: $tablet) {
   .navigation {
@@ -35,7 +85,7 @@
   .navigation__menu {
     display: flex;
     justify-content: flex-start;
-    padding: 0 0 0 25px;
+    padding: 0 0 0 5.8%;
     font-size: 15px;
     font-weight: 700;
     order: 2;
@@ -51,34 +101,44 @@
 
   .navigation__link {
     width: auto;
-    padding: 24px;
+    padding: 18px 24px;
   }
 }
 
 @media (min-width: $desktop) {
   .navigation {
-    padding: 0 0 0 16px;
+    height: 88px;
+    padding: 0 0 0 calc(50% - 550px);
     background-color: $bg-color;
     border-bottom: 1px solid $border-color-header;
+    flex: 1 0 33%;
     order: 1;
+  }
+
+  .navigation__menu {
+    padding: 0;
+
+    &--grey {
+      background: $bg-color;
+    }
   }
 
   .navigation__item {
     border-bottom: none;
-  }
 
-  .navigation__link--grey {
-    border-right: 1px solid $border-color-header;
+    &--knitting {
+      border-left: 1px solid $border-color-header;
+    }
   }
 
   .navigation__link {
     @include text-dark;
-    padding: 24px 34px;
+    padding: 30px 40px 30px 30px;
     line-height: 24px;
-    min-height: 90px;
-  }
+    min-height: 88px;
 
-  .navigation__menu--grey {
-    background-color: $bg-color;
+    &--grey {
+      border-right: 1px solid $border-color-header;
+    }
   }
 }

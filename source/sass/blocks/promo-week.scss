@@ -1,15 +1,17 @@
 .promo-week {
-  width:81%;
-  padding: 0;
-  margin: 0 auto;
+  width: 100%;
+  padding: 0 9.4%;
+  margin: 0 auto 40px;
 }
 
 .promo-week__adv {
+  display: block;
   color: $design-color;
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
+  margin: 0 0 20px;
 }
 
 .promo-week__info {
@@ -36,31 +38,52 @@
 
 @media (min-width: $tablet) {
   .promo-week {
-    width: 86%;
+    width: 100%;
+    position: relative;
+    padding: 40px calc(50% - 334px) 0;
+    margin: 0 0 50px;
+  }
+
+  .promo-week::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: -20px;
+    width: 100%;
+    height: 24px;
+    background: url("../img/bg-zigzag-fill.svg");
   }
 
   .promo-week__wrapper {
     display: flex;
-    margin: 0 auto;
+    margin: 0 auto 40px;
     justify-content: space-between;
   }
 
   .promo-week__adv {
     width: 80px;
     text-align: center;
+    padding: 12px 95px 0 0;
   }
 
   .promo-week__image {
     float: right;
-    margin: -250px 0 0;
+    margin: -290px 0 0;
   }
 
   .promo-week__info {
     width: 290px;
+    font-size: 17px;
+    line-height: 30px;
+    margin: 0 0 35px;
   }
 
   .promo-week__price {
     width: 290px;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 0 35px;
   }
 
   .promo-week__order {
@@ -69,10 +92,22 @@
 }
 
 @media (min-width: $desktop) {
+  .promo-week {
+    padding: 0 calc(50% - 540px);
+    margin: 0 0 73px;
+  }
+
+  .promo-week::before {
+    left: 0;
+    top: -140px;
+    width: 100%;
+    height: 34px;
+  }
+
   .promo-week__wrapper {
     position: relative;
     width: 670px;
-    margin: 100px 0 45px;
+    margin: 120px 0 45px;
     z-index: 2;
   }
 
@@ -99,5 +134,9 @@
 
   .promo-week__order {
     margin: 0 0 0 195px;
+  }
+
+  .promo-week__image {
+    margin: -530px 20px 0 0;
   }
 }

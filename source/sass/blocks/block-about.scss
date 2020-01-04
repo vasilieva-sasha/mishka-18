@@ -1,7 +1,19 @@
 .block-about {
-  width: 260px;
-  padding: 0;
-  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  padding: 0 9.4%;
+  margin: 0 0 25px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 5px;
+    left: 0;
+    top: 0;
+    background: url("../img/bg-zigzag-line.svg") repeat-x;
+  }
 }
 
 .block-about__list {
@@ -12,73 +24,97 @@
 
 .block-about__item {
   width: 360px;
-  padding: 55px 85px 29px 30px;
+  padding: 55px 85px 29px 0;
   background-position-x: 10%;
 
   &--eco {
-    background: url("../img/icon-feature-flower.svg") no-repeat 40px 0;
+    background: url("../img/icon-feature-flower.svg") no-repeat 10px 0;
   }
 
   &--money {
-    background: url("../img/icon-feature-money.svg") no-repeat 30px 0;
+    background: url("../img/icon-feature-money.svg") no-repeat 0 0;
   }
 
   &--heart {
-    background: url("../img/icon-feature-heart.svg") no-repeat 40px 5px;
+    background: url("../img/icon-feature-heart.svg") no-repeat 10px 5px;
   }
 
   &--knitting {
-    background: url("../img/icon-feature-ball.svg") no-repeat 35px 0;
+    background: url("../img/icon-feature-ball.svg") no-repeat 5px 0;
   }
 
   &--rocket {
-    background: url("../img/icon-feature-rocket.svg") no-repeat 25px 0;
+    background: url("../img/icon-feature-rocket.svg") no-repeat 0 0;
   }
 
   &--gift {
-    background: url("../img/icon-feature-gift.svg") no-repeat 30px 0;
+    background: url("../img/icon-feature-gift.svg") no-repeat 0 0;
   }
 }
 
 .block-about__header {
-  padding: 50px 30px 30px;
+  padding: 30px 0;
 }
 
 @media (min-width: $tablet) {
   .block-about {
-    width: 86%;
-    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    padding: 0 calc(50% - 294px) 0 calc(50% - 334px);
+  }
+
+  .block-about::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 15px;
+    left: 0;
+    top: 5px;
+    background: url("../img/bg-zigzag-line.svg") no-repeat;
   }
 
   .block-about__header {
+    padding: 70px 0 30px;
     margin: 0 0 20px;
   }
 
   .block-about__list {
     height: 480px;
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    flex-wrap: wrap;
+    column-count: 2;
   }
 
   .block-about__item {
     font-size: 20px;
     line-height: 22px;
-    padding: 0 60px 55px 0;
+    padding: 55px 60px 55px 0;
+    background-position: 5px 0;
   }
 }
 
 @media (min-width: $desktop) {
   .block-about {
-    margin: 80px auto 0;
+    padding: 0 calc(50% - 540px);
+    margin: 0 0 10px;
+  }
+
+  .block-about::before {
+    width: 1050px;
+    height: 23px;
+    left: calc(50% - 540px);
   }
 
   .block-about__header {
+    padding: 85px 0 50px;
     margin: 0 0 0 190px;
   }
 
   .block-about__list {
+    width: 700px;
     margin: 0 0 0 190px;
+  }
+
+  .block-about__item {
+    margin: 0;
   }
 }

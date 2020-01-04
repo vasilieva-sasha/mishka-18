@@ -1,9 +1,90 @@
+.modal {
+  width: 100%;
+  padding: 0 9.3%;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+  border: solid 1px #c6c6c6;
+}
+
+.modal__header {
+  padding: 35px 0 20px 65px;
+}
+
 .modal__legend {
   color: $text-color;
   font-size: 15px;
   line-height: 30px;
+  text-align: center;
+  margin: 0 0 25px;
 }
 
 .modal__size {
+  padding: 0;
   border: none;
+}
+
+.modal__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.modal__label {
+  display: block;
+  width: 82px;
+  height: 52px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  color: $text-color;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px;
+  border: solid 2px rgba($text-color, 0.1);
+}
+
+.modal__input:checked ~ .modal__label {
+  border: solid 2px $design-color;
+}
+
+.modal__list {
+  @include list-reset;
+  display: flex;
+  margin: 0 0 25px;
+}
+
+.modal__list li {
+  margin: 0 5px 0 0;
+}
+
+.modal__button {
+  margin: 0 0 45px;
+}
+
+@media (min-width: $tablet) {
+  .modal {
+    width: 566px;
+    padding: 50px 108px;
+  }
+
+  .modal__header {
+    font-size: 30px;
+    line-height: 57px;
+    padding: 0;
+  }
+
+  .modal__legend {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .modal__label {
+    width: 112px;
+  }
+
+  .modal__button {
+    width: 350px;
+    margin: 0;
+  }
 }

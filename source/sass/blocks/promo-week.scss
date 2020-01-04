@@ -1,15 +1,17 @@
 .promo-week {
-  width: 81%;
-  padding: 0;
-  margin: 0 auto;
+  width: 100%;
+  padding: 0 9.4%;
+  margin: 0 auto 40px;
 }
 
 .promo-week__adv {
+  display: block;
   color: $design-color;
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
+  margin: 0 0 20px;
 }
 
 .promo-week__info {

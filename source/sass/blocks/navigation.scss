@@ -17,7 +17,7 @@
 .navigation__link {
   display: block;
   width: 320px;
-  padding: 30px 75px;
+  padding: 27px 75px;
   margin: 0 auto;
   color: $text-color-dark;
 }
@@ -30,10 +30,11 @@
   .navigation__toggle {
     display: block;
     position: absolute;
-    top: 32px;
+    top: 30px;
     right: 9.37%;
     width: 20px;
     height: 2px;
+    padding: 0;
     background-color: $text-color-dark;
     border: 0 none;
     cursor: pointer;
@@ -49,23 +50,27 @@
     }
 
     &::before {
-      margin-top: 4px;
+      margin-top: -5.5px;
     }
 
     &::after {
-      margin-top: -6px;
+      margin-top: 4px;
     }
   }
 
   .navigation__toggle--opened {
-    transform: translateY(8px) rotate(-45deg);
+    width: 1px;
+    height: 1px;
+    background-color: transparent;
 
     &::before {
-      transform: translateY(-4px) rotate(90deg);
+      width: 27px;
+      transform: translateX(-15px) translateY(7px) rotate(45deg);
     }
 
     &::after {
-      display: none;
+      width: 27px;
+      transform: translateX(-15px) translateY(-3px) rotate(-45deg);
     }
   }
 }

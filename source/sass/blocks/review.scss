@@ -1,7 +1,7 @@
 .review {
-  width: 260px;
-  padding: 0;
-  margin: 0 auto;
+  width: 100%;
+  padding: 0 9.4%;
+  margin: 0 0 40px;
 }
 
 .review__item {
@@ -18,6 +18,8 @@
 
 .review__author-name {
   @include text-dark;
+  display: block;
+  margin: 0 0 5px;
   line-height: 24px;
   font-style: normal;
 }

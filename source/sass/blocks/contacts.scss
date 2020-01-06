@@ -144,8 +144,17 @@
     padding: 0 0 0 185px;
   }
 
+  .contacts__row {
+    width: 320px;
+    margin: 0 0 30px;
+  }
+
   .contacts__heading {
     flex: none;
+  }
+
+  .contacts__address {
+    padding: 0;
   }
 
   .contacts__map {
@@ -162,7 +171,7 @@
 
   .contacts__write-us {
     position: absolute;
-    left: 405px;
+    left: 27%;
     bottom: 35px;
   }
 }

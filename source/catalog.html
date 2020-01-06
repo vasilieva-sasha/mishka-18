@@ -96,10 +96,16 @@
       </section>
       <section class="manufacture">
         <h2 class="manufacture__header heading heading--smaller">Процесс производства</h2>
-        <video class="manufacture__video" poster="img/video-mobile@1x.jpg" width="260" height="150">
+        <video class="manufacture__video" poster="img/video-mobile@1x.jpg">
           <source src="video.mp4" type="video/mp4">
           <source src="video.ogv" type="video/ogg">
           <source src="video.webm" type="video/webm">
+          <div data-poster="img/video-mobile@1x.jpg"></div>
+          <div data-poster="img/video-mobile@2x.jpg" data-media="(min-device-pixel-ratio: 2.0)"></div>
+          <div data-poster="img/video-tablet@1x.jpg" data-media="(min-width: 768px)"></div>
+          <div data-poster="img/video-tablet@2x.jpg" data-media="(min-width: 768px) and (min-device-pixel-ratio: 2.0)"></div>
+          <div data-poster="img/video-desktop@1x.jpg" data-media="(min-width: 1150px)"></div>
+          <div data-poster="img/video-desktop@2x.jpg" data-media="(min-width: 1150px) and (min-device-pixel-ratio: 2.0)"></div>
         </video>
         <p class="manufacture__text">
           По просьбам наших любимых фолловеров&nbsp;мы сняли для вас подробное видео о том, как появляются наши товары.
@@ -170,5 +176,7 @@
       </form>
     </section>
     <script src="js/script.js"></script>
+    <script src="js/picturefill.js"></script>
+    <script src="js/posterfill.js"></script>
   </body>
 </html>

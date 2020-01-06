@@ -120,5 +120,17 @@
 
   .main-content__item {
     width: 525px;
+
+    &:hover {
+      transform: scaleY(1.05);
+    }
+
+    &:hover .main-content__link {
+      padding: 25px 130px 30px 0;
+    }
+
+    &:active .main-content__link {
+      opacity: 0.3;
+    }
   }
 }

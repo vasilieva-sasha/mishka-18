@@ -119,6 +119,14 @@
   &--name {
     padding: 5px 0 0;
   }
+
+  &:hover ~ .form__label::before {
+    border: 2px solid $design-color;
+  }
+
+  &:active ~ .form__label::before {
+    border: 2px solid rgba($text-color, 0.3);
+  }
 }
 
 .form__input--radio:checked ~ .form__label--radio::after {

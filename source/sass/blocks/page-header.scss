@@ -30,6 +30,22 @@
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
+.page-header__icon {
+  width: 20px;
+  height: 20px;
+  opacity: 0.2;
+  color: $text-color-dark;
+
+  &:hover {
+    color: $design-color;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .page-header__cart {
   display: block;
   width: 320px;
@@ -42,22 +58,9 @@
   flex-basis: 20%;
   text-align: end;
   background: transparent;
-  opacity: 0.2;
   padding: 0;
   margin: 0 0 0 auto;
   border: none;
-
-  &:hover {
-    opacity: 1;
-  }
-
-  &:hover path {
-    fill: $design-color;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 .page-header__text {

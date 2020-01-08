@@ -20,9 +20,15 @@
 .copyright__link {
   display: block;
   margin: 0 15px;
+}
 
-  &:hover path {
-    fill: $mail-link-color;
+.copyright__icon {
+  width: 26.943px;
+  height: 34.09px;
+  color: $design-color;
+
+  &:hover {
+    color: $mail-link-color;
   }
 
   &:active {

@@ -6,16 +6,25 @@
 
 .page-footer__logo {
   display: none;
+}
 
-  &:hover path {
-    fill: $mail-link-color;
+.page-footer__icon {
+  width: 101.615px;
+  color: $text-color-dark;
+
+  &--social {
+    width: 22px;
+    height: 28px;
+  }
+
+  &:hover {
+    color: $mail-link-color;
   }
 
   &:active {
     opacity: 0.3;
   }
 }
-
 .page-footer__copyright {
   border-top: 1px solid $divider;
 }

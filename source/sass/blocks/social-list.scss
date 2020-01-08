@@ -10,13 +10,13 @@
 .social-list__item {
   cursor: pointer;
 
-  &:hover path {
-    fill: $mail-link-color;
-  }
+  // &:hover path {
+  //   fill: $mail-link-color;
+  // }
 
-  &:active {
-    opacity: 0.3;
-  }
+  // &:active {
+  //   opacity: 0.3;
+  // }
 }
 
 @media (min-width: $tablet) {

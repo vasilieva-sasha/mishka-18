@@ -6,9 +6,9 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  vertical-align: middle;
   background-color: $bg-color;
   border: 2px solid $text-color;
+  cursor: pointer;
 
   &--green {
     color: $bg-color;
@@ -20,5 +20,22 @@
 @media (min-width: $tablet) {
   .button {
     padding: 13px 40px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .button {
+    &:hover {
+      color: $bg-color;
+      background-color: $text-color;
+    }
+
+    &:active {
+      color: rgba($bg-color, 0.3);
+    }
+
+    &--green:hover {
+      background-color: $design-color-dark;
+    }
   }
 }

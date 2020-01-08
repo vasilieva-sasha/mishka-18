@@ -35,7 +35,12 @@
   }
 
   .page-footer__logo {
+    align-items: center;
     flex: 1 0 33%;
+  }
+
+  .page-footer__logo img {
+    height: 34px;
   }
 
   .page-footer__social {

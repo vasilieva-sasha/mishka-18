@@ -62,6 +62,13 @@
     margin: 0 0 25px;
   }
 
+  @media (min-resolution: 1.5dppx) {
+    .review {
+      background: url("../img/review@2x.jpg") no-repeat left 10px;
+      background-size: 350px auto;
+    }
+  }
+
   .review__text {
     width: 650px;
     margin: 50px 0 55px;
@@ -111,5 +118,29 @@
   .review__toggle {
     top: 280px;
     right: 5px;
+  }
+
+  .review__prev {
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .review__next {
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

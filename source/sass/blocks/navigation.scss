@@ -135,7 +135,15 @@
     @include text-dark;
     padding: 30px 40px 30px 30px;
     line-height: 24px;
-    min-height: 88px;
+    min-height: 87px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
 
     &--grey {
       border-right: 1px solid $border-color-header;

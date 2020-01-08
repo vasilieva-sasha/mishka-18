@@ -26,19 +26,31 @@
 }
 
 .catalog-item__price {
-  display: block;
+  display: flex;
+  justify-content: space-between;
   width: 207px;
   padding: 20px 0 26px;
+  color: $text-color-dark;
   font-size: 15px;
   line-height: 24px;
   border-top: 1px solid $catalog-color;
 }
 
+.catalog-item__cart {
+  border: none;
+  background-color: transparent;
+  opacity: 0.2;
+  margin: 0 0 0 auto;
+}
+
 @media (min-width: $tablet) {
   .catalog-item {
-    display: flex;
     padding: 0;
     margin: 0 0 50px;
+  }
+
+  .catalog-item a {
+    display: flex;
   }
 
   .catalog-item__wrapper {
@@ -68,7 +80,7 @@
     font-size: 17px;
     font-weight: 700;
     line-height: 24px;
-    padding: 23px 50px 29px 5px;
+    padding: 23px 0 29px 5px;
   }
 }
 
@@ -76,6 +88,44 @@
   .catalog-item {
     display: block;
     flex-grow: 0;
+
+    &:hover {
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .catalog-item a {
+    display: block;
+  }
+
+  .catalog-item__header {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .catalog-item__cart {
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:hover path {
+      fill: $design-color;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .catalog-item__info {
@@ -87,6 +137,6 @@
   }
 
   .catalog-item__price {
-    padding: 23px 50px 29px 0;
+    padding: 23px 0 29px 0;
   }
 }

@@ -15,27 +15,23 @@
     background-color: $design-color;
     border: none;
   }
+
+  &:hover {
+    color: $bg-color;
+    background-color: $text-color;
+  }
+
+  &:active {
+    color: rgba($bg-color, 0.3);
+  }
+
+  &--green:hover {
+    background-color: $design-color-dark;
+  }
 }
 
 @media (min-width: $tablet) {
   .button {
     padding: 13px 40px;
-  }
-}
-
-@media (min-width: $desktop) {
-  .button {
-    &:hover {
-      color: $bg-color;
-      background-color: $text-color;
-    }
-
-    &:active {
-      color: rgba($bg-color, 0.3);
-    }
-
-    &--green:hover {
-      background-color: $design-color-dark;
-    }
   }
 }

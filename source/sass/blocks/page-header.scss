@@ -46,6 +46,18 @@
   padding: 0;
   margin: 0 0 0 auto;
   border: none;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:hover path {
+    fill: $design-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-header__text {
@@ -128,18 +140,6 @@
 
   .page-header__button {
     cursor: pointer;
-
-    &:hover {
-      opacity: 1;
-    }
-
-    &:hover path {
-      fill: $design-color;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
   }
 
   .page-header__text {

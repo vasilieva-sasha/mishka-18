@@ -11,11 +11,23 @@
   font-size: 19px;
   line-height: 18px;
   margin: 0 15px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__link {
   display: block;
   margin: 0 15px;
+
+  &:hover path {
+    fill: $mail-link-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet) {

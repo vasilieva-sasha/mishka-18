@@ -6,6 +6,14 @@
 
 .page-footer__logo {
   display: none;
+
+  &:hover path {
+    fill: $mail-link-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__copyright {
@@ -37,9 +45,10 @@
   .page-footer__logo {
     align-items: center;
     flex: 1 0 33%;
+    cursor: pointer;
   }
 
-  .page-footer__logo img {
+  .page-footer__logo svg {
     height: 34px;
   }
 

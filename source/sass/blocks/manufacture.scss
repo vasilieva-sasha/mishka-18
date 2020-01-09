@@ -1,5 +1,5 @@
 .manufacture {
-  margin: 0 calc(50% - 130px) 60px;
+  margin: 0 9.4%;
   border: 1px solid $catalog-color;
 }
 
@@ -9,8 +9,27 @@
   background: url("../img/icon-video.svg") no-repeat 33px 30px;
 }
 
+.manufacture__wrapper {
+  position: relative;
+  width: 260px;
+  margin: 0;
+  padding: 0;
+}
+
 .manufacture__video {
+  width: 260px;
   margin: 0 0 20px;
+}
+
+.manufacture__play {
+  position: absolute;
+  top: 37px;
+  left: 80px;
+  width: 101px;
+  height: 77px;
+  background: transparent url("../img/icon-play.svg") no-repeat;
+  border: none;
+  cursor: pointer;
 }
 
 .manufacture__text {
@@ -35,10 +54,19 @@
     margin: 0 auto 30px;
   }
 
+  .manufacture__wrapper {
+    width: 668px;
+  }
+
   .manufacture__video {
-    width: 100%;
+    width: 668px;
     height: 455px;
     order: 1;
+  }
+
+  .manufacture__play {
+    top: 189px;
+    left: 283px;
   }
 
   .manufacture__header {

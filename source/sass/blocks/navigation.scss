@@ -20,6 +20,14 @@
   padding: 27px 75px;
   margin: 0 auto;
   color: $text-color-dark;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .navigation__toggle {
@@ -136,14 +144,6 @@
     padding: 30px 40px 30px 30px;
     line-height: 24px;
     min-height: 87px;
-
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
 
     &--grey {
       border-right: 1px solid $border-color-header;

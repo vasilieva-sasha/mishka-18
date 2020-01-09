@@ -45,6 +45,15 @@
   color: inherit;
   padding: 0 0 4px;
   box-shadow: 0 1px $design-color;
+
+  &:hover {
+    color: $mail-link-color;
+    box-shadow: 0 1px $mail-link-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__map {
@@ -75,13 +84,14 @@
     width: 100%;
     padding: 0 calc(50% - 334px);
     margin: 0 0 50px;
+    background: url("../img/icon-flag.svg") no-repeat 670px 62px;
   }
 
   .contacts::before {
     content: "";
     height: 15px;
     top: 5px;
-    background: url("../img/bg-zigzag-line.svg") no-repeat;
+    background: url("../img/bg-zigzag-line.svg") repeat-x;
   }
 
   .contacts__header {
@@ -143,6 +153,7 @@
     flex-wrap: wrap;
     padding: 0 calc(50% - 540px);
     margin: 0 0 25px;
+    background-position: 110px 156px;
   }
 
   .contacts::before {
@@ -198,16 +209,5 @@
     position: absolute;
     left: 27%;
     bottom: 35px;
-  }
-
-  .contacts__e-mail {
-    &:hover {
-      color: $mail-link-color;
-      box-shadow: 0 1px $mail-link-color;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
   }
 }

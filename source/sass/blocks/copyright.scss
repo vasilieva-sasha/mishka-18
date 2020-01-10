@@ -6,20 +6,20 @@
   justify-content: center;
 }
 
-.copyright__text {
-  display: block;
-  font-size: 19px;
-  line-height: 18px;
+.copyright__link {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  color: $text-color-dark;
   margin: 0 15px;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 18px;
 
   &:active {
     opacity: 0.3;
   }
-}
-
-.copyright__link {
-  display: block;
-  margin: 0 15px;
 }
 
 .copyright__icon {
@@ -39,7 +39,13 @@
 @media (min-width: $tablet) {
   .copyright {
     margin: 0;
+    padding: 0;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
+    flex: 1 0 30%;
+  }
+
+  .copyright__link {
+    margin: 0;
   }
 }

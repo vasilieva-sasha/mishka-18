@@ -1,6 +1,9 @@
 var buttonT = document.querySelector(".navigation__toggle")
 var menuNav = document.querySelector(".navigation__menu")
 var menuUser = document.querySelector(".site-list")
+var modal = document.querySelector(".modal")
+var buttonCart = document.querySelector(".js-button-cart")
+var overlay = document.querySelector(".modal__overlay-js")
 
 window.onload = function() {
     menuNav.classList.add("navigation__menu--closed");
@@ -13,4 +16,24 @@ window.onload = function() {
     buttonT.classList.toggle("navigation__toggle--opened")
     menuNav.classList.toggle("navigation__menu--opened")
     menuUser.classList.toggle("site-list--opened")
+  });
+
+  buttonCart.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    modal.classList.add("modal--js-show");
+    overlay.classList.add("modal--js-show");
+  });
+
+  overlay.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    modal.classList.remove("modal--js-show");
+    overlay.classList.remove("modal--js-show");
+  });
+
+  window.addEventListener("keydown", function(evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+        modal.classList.remove("modal--js-show");
+        overlay.classList.remove("modal--js-show");
+    }
   });

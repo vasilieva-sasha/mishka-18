@@ -82,17 +82,17 @@
           <img class="promo-week__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзики цвета Тиффани/серый">
         </picture>
         <p class="promo-week__price">Цена: 990 руб.</p>
-        <a class="promo-week__order button" href="#">Заказать</a>
+        <a class="promo-week__order button js-button-cart" href="#">Заказать</a>
       </section>
       <section class="block-about">
         <h2 class="block-about__header heading heading--med">Коротко о нас:</h2>
         <ul class="block-about__list">
-          <li class="block-about__item block-about__item--eco">Экологически чистые материалы</li>
-          <li class="block-about__item block-about__item--money">Скандинавский стиль по российской цене</li>
-          <li class="block-about__item block-about__item--heart">Увеличивает лайки на фотографиях</li>
-          <li class="block-about__item block-about__item--knitting">Связано вручную с любовью и умилением</li>
-          <li class="block-about__item block-about__item--rocket">Поддержка отечественного производителя</li>
-          <li class="block-about__item block-about__item--gift">Поставляется в подарочной упаковке</li>
+          <li class="block-about__item block-about__item--eco">Экологически чистые&nbsp;материалы</li>
+          <li class="block-about__item block-about__item--money">Скандинавский стиль по&nbsp;российской цене</li>
+          <li class="block-about__item block-about__item--heart">Увеличивает лайки на&nbsp;фотографиях</li>
+          <li class="block-about__item block-about__item--knitting block-about__item--padding">Связано вручную с любовью&nbsp;и&nbsp;умилением</li>
+          <li class="block-about__item block-about__item--rocket block-about__item--padding">Поддержка отечественного производителя</li>
+          <li class="block-about__item block-about__item--gift block-about__item--padding">Поставляется в подарочной&nbsp;упаковке</li>
         </ul>
       </section>
       <section class="review">
@@ -115,18 +115,18 @@
             <p class="contacts__heading">e-mail:</p>
             <p class="contacts__detail"><a class="contacts__e-mail" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>
           </div>
-          <div class="contacts__row">
+          <div class="contacts__row contacts__row--address">
             <p class="contacts__heading">адрес:</p>
-            <p class="contacts__detail">
+            <div class="contacts__detail">
               <address class="contacts__address">г. Санкт-Петербург,<br>
                 ул. Большая Конюшенная,<br>
                 д. 19/8, офис 101<br>
               </address>
-            </p>
+            </div>
           </div>
         </div>
         <p class="contacts__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2376.72693141886!2d30.320083842018896!3d59.93909197534206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1573238296687!5m2!1sen!2sru" frameborder="0" style="border: 0;" allowfullscreen=""></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2376.72693141886!2d30.320083842018896!3d59.93909197534206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1573238296687!5m2!1sen!2sru" style="border: 0;" allowfullscreen=""></iframe>
         </p>
         <a class="contacts__write-us button" href="#">Напишите нам</a>
       </section>
@@ -161,20 +161,21 @@
         </li>
       </ul>
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <b>Разработано</b>
           <svg class="copyright__icon">
             <use xlink:href="img/sprite.svg#academy"></use>
           </svg>
         </a>
       </div>
     </footer>
+    <div class="modal__overlay-js"></div>
     <section class="modal">
       <h2 class="modal__header heading heading--med">Добавить в&nbsp;корзину</h2>
       <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="modal__size">
           <div class="modal__wrapper">
-            <legend class="modal__legend">Выберите размер:</legend>
+            <p class="modal__legend">Выберите размер:</p>
             <ul class="modal__list">
               <li><input class="modal__input" type="radio" name="size" value="small" id="small" aria-label="маленький размер"  checked><label class="modal__label" for="small">s</label></li>
               <li><input class="modal__input" type="radio" name="size" value="medium" id="medium" aria-label="средний размер"><label class="modal__label" for="medium">m</label></li>

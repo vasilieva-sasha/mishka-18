@@ -58,8 +58,8 @@
     position: relative;
     display: block;
     background: url("../img/review@1x.jpg") no-repeat left 10px;
-    padding: 90px 50px;
-    margin: 0 0 25px;
+    padding: 90px calc(50% - 337px);
+    margin: 0 0 20px;
   }
 
   @media (min-resolution: 1.5dppx) {
@@ -71,20 +71,21 @@
 
   .review__text {
     width: 650px;
-    margin: 50px 0 55px;
+    margin: 48px 0 58px;
+    font-size: 17px;
   }
 
   .review__toggle {
     position: absolute;
     right: 50px;
-    bottom: 50px;
-    width: 168px;
+    bottom: 55px;
+    width: 172px;
     order: 4;
   }
 
   .review__write {
     position: absolute;
-    right: 45px;
+    right: 50px;
     top: 90px;
     width: 174px;
     text-align: center;

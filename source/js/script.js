@@ -7,6 +7,7 @@ var overlay = document.querySelector(".modal__overlay-js")
 var buttonAdd = document.querySelector("modal__button")
 
 window.onload = function() {
+    buttonT.classList.remove("navigation__toggle--no-js");
     menuNav.classList.add("navigation__menu--closed");
     menuUser.classList.add("site-list--closed");
     buttonT.classList.remove("navigation__toggle--opened");

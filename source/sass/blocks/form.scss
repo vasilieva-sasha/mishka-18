@@ -38,6 +38,7 @@
   margin: 0 0 17px;
   border: 0 none;
   box-shadow: inset 0 -2px 0 0 $text-color-dark;
+  transition-duration: 200ms;
 
   &--name {
     margin: 0 0 16px;
@@ -85,12 +86,27 @@
   }
 }
 
+.form__icon {
+  position: absolute;
+  right: 3px;
+  bottom: 27px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.2;
+
+  &:hover {
+    color: $design-color;
+    opacity: 1;
+  }
+}
+
 .form__label {
   @include text-dark;
   display: block;
   position: relative;
   line-height: 18px;
   padding: 10px 0 10px 62px;
+  transition-duration: 200ms;
 
   &--radio {
     margin: 0 0 8px 0;
@@ -193,6 +209,14 @@
   &--name {
     margin: 0 0 -2px;
   }
+
+  &--tel {
+    position: relative;
+  }
+
+  &--mail {
+    position: relative;
+  }
 }
 
 .form__button {
@@ -226,25 +250,25 @@
 
   .form__wrapper {
     flex-direction: row;
-    padding: 47px 6.5% 0;
+    padding: 47px 0 0;
     margin: 0 0 25px;
 
     &--color {
-      padding: 50px 4.7% 0 6.5%;
+      padding: 50px 0 0;
     }
 
     &--tel {
-      padding: 50px 6.5% 0;
+      padding: 50px 0 0;
       margin: 0 0 10px;
     }
 
     &--mail {
-      padding: 0 6.5%;
+      padding: 0;
       margin: 0 0 30px;
     }
 
     &--text {
-      padding: 50px 6.5% 0;
+      padding: 50px 0 0;
     }
   }
 
@@ -355,6 +379,11 @@
     }
   }
 
+  .form__icon {
+    right: 24px;
+    bottom: 25px;
+  }
+
   .form__small {
     font-size: 17px;
     display: block;
@@ -376,27 +405,35 @@
 
 @media (min-width: $desktop) {
   .form__wrapper {
-    padding: 48px calc(50% - 462px) 0;
+    padding: 48px 0 0;
 
     &--name {
-      padding: 55px calc(50% - 352px) 0 calc(50% - 462px);
+      padding: 55px 0 0;
     }
 
     &--mail {
-      padding: 0 calc(50% - 352px) 0 calc(50% - 462px);
+      padding: 0;
     }
 
     &--tel {
-      padding: 50px calc(50% - 352px) 0 calc(50% - 462px);
+      padding: 50px 0 0;
     }
 
     &--text {
-      padding: 50px calc(50% - 352px) 0 calc(50% - 462px);
+      padding: 50px 0 0;
     }
   }
 
   .form__legend {
     flex: 0 1 12%;
+
+    &--tel {
+      flex: 0 1 14%;
+    }
+
+    &--mail {
+      flex: 0 1 14%;
+    }
 
     &--text {
       flex: 0 1 14%;
@@ -428,6 +465,10 @@
     &--checkbox {
       padding: 16px 0 18px 80px;
     }
+  }
+
+  .form__icon {
+    right: 4px;
   }
 
   .form__small {

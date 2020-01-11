@@ -30,6 +30,7 @@
   background: transparent url("../img/icon-play.svg") no-repeat;
   border: none;
   cursor: pointer;
+  transition-duration: 300ms;
 
   &:hover {
     transform: scale(1.2);
@@ -109,6 +110,7 @@
     flex-wrap: wrap;
     padding: 0 57px 0 0;
     margin: 0 auto 105px;
+    transition-duration: 200ms;
 
     &:hover {
       box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);

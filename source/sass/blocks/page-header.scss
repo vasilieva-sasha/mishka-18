@@ -21,6 +21,10 @@
   }
 }
 
+.page-header__logo img {
+  transition-duration: 200ms;
+}
+
 .page-header__input-search {
   position: relative;
   display: block;
@@ -43,6 +47,7 @@
   height: 20px;
   opacity: 0.2;
   color: $text-color-dark;
+  transition-duration: 200ms;
 
   &:hover {
     color: $design-color;
@@ -60,6 +65,7 @@
   padding: 28px 30px;
   margin: 0 auto 0 0;
   color: $text-color-dark;
+  transition-duration: 200ms;
 
   &:hover {
     opacity: 0.6;

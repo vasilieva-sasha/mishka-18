@@ -123,6 +123,7 @@
 
   .review__prev {
     cursor: pointer;
+    transition-duration: 200ms;
 
     &:hover {
       opacity: 0.6;
@@ -135,6 +136,7 @@
 
   .review__next {
     cursor: pointer;
+    transition-duration: 200ms;
 
     &:hover {
       opacity: 0.6;

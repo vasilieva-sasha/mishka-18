@@ -5,7 +5,29 @@
 }
 
 @media (min-width: $tablet) {
-  .fieldset--colored {
-    background-color: $catalog-color-light;
+  .fieldset {
+    padding: 0 6.5%;
+
+    &--color {
+      padding: 0 4.7% 0 6.5%;
+    }
+
+    &--colored {
+      background-color: $catalog-color-light;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .fieldset {
+    padding: 0 calc(50% - 352px) 0 calc(50% - 462px);
+
+    &--type {
+      padding: 0 calc(50% - 462px) 0;
+    }
+
+    &--color {
+      padding: 0 calc(50% - 462px) 0;
+    }
   }
 }

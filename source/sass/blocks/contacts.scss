@@ -45,6 +45,7 @@
   color: inherit;
   padding: 0 0 4px;
   box-shadow: 0 1px $design-color;
+  transition-duration: 200ms;
 
   &:hover {
     color: $mail-link-color;

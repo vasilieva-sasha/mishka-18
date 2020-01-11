@@ -120,6 +120,7 @@
 
   .main-content__item {
     width: 525px;
+    transition-duration: 200ms;
 
     &:hover {
       transform: scaleY(1.05);
@@ -138,6 +139,7 @@
     width: 100%;
     padding: 35px 37px;
     background-position: 450px center;
+    transition-duration: 200ms;
 
     &--toys {
       background-position: 427px center;

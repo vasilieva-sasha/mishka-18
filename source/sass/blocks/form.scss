@@ -9,7 +9,7 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 16px;
-  padding: 20px 0;
+  padding: 21px 0;
   margin: 0 0 10px;
   text-transform: uppercase;
 
@@ -40,7 +40,7 @@
   box-shadow: inset 0 -2px 0 0 $text-color-dark;
 
   &--name {
-    margin: 0 0 8px;
+    margin: 0 0 16px;
   }
 
   &--text {
@@ -137,6 +137,10 @@
     border: 2px solid $text-color;
   }
 
+  &--checkbox-min {
+    margin: 0 0 7px;
+  }
+
   &--name {
     padding: 5px 0 0;
   }
@@ -185,10 +189,14 @@
   display: flex;
   flex-direction: column;
   margin: 0 0 5px;
+
+  &--name {
+    margin: 0 0 -2px;
+  }
 }
 
 .form__button {
-  margin: 0 0 55px;
+  margin: 0 0 60px;
 }
 
 @media (max-width: $mobile) {
@@ -218,7 +226,7 @@
 
   .form__wrapper {
     flex-direction: row;
-    padding: 50px 6.5% 0;
+    padding: 47px 6.5% 0;
     margin: 0 0 25px;
 
     &--color {
@@ -226,6 +234,7 @@
     }
 
     &--tel {
+      padding: 50px 6.5% 0;
       margin: 0 0 10px;
     }
 
@@ -233,10 +242,14 @@
       padding: 0 6.5%;
       margin: 0 0 30px;
     }
+
+    &--text {
+      padding: 50px 6.5% 0;
+    }
   }
 
   .form__legend {
-    flex: 1 0 25%;
+    flex: 1 0 24%;
     padding: 15px 0;
   }
 
@@ -314,9 +327,11 @@
   }
 
   .form__input {
+    font-size: 19px;
+
     &--name {
       flex: 1;
-      padding: 0 0 0 15px;
+      padding: 0 0 0 20px;
     }
 
     &--text {
@@ -324,13 +339,19 @@
     }
 
     &--tel {
+      padding: 7px 20px;
       flex: 1 0 75%;
       background-color: transparent;
     }
 
     &--mail {
+      padding: 7px 20px;
       flex: 1 0 75%;
       background-color: transparent;
+    }
+
+    &::placeholder {
+      font-size: 19px;
     }
   }
 
@@ -349,13 +370,17 @@
 
   .form__list-item {
     display: flex;
-    margin: 0 0 15px;
+    margin: 0 0 8px;
   }
 }
 
 @media (min-width: $desktop) {
   .form__wrapper {
-    padding: 50px calc(50% - 462px) 0;
+    padding: 48px calc(50% - 462px) 0;
+
+    &--name {
+      padding: 55px calc(50% - 352px) 0 calc(50% - 462px);
+    }
 
     &--mail {
       padding: 0 calc(50% - 352px) 0 calc(50% - 462px);
@@ -392,7 +417,7 @@
   }
 
   .form__name {
-    padding: 0 110px 0 0;
+    padding: 0 0 0 19px;
   }
 
   .form__label {
@@ -403,10 +428,6 @@
     &--checkbox {
       padding: 16px 0 18px 80px;
     }
-  }
-
-  .form__list-item {
-    margin: 0 0 17px;
   }
 
   .form__small {

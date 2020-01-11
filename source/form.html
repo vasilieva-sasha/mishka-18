@@ -54,7 +54,7 @@
       <form class="form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="fieldset">
           <div class="form__wrapper">
-            <legend class="form__legend">Тип</legend>
+            <p class="form__legend">Тип</p>
             <ul class="form__type">
               <li>
                 <input class="form__input form__input--radio form__input--hidden" type="radio" id="accessories" name="type" value="accessory" checked><label class="form__label form__label--radio form__label--acc" for="accessories">Аксессуар для интерьера</label>
@@ -67,7 +67,7 @@
         </fieldset>
         <fieldset class="fieldset fieldset--colored">
           <div class="form__wrapper form__wrapper--color">
-            <legend class="form__legend">Цвет</legend>
+            <p class="form__legend">Цвет</p>
             <ul class="form__color">
               <li>
                 <input class="form__input form__input--checkbox form__input--hidden" type="checkbox" name="color" value="white" id="white" checked><label class="form__label form__label--checkbox" for="white">Белый</label>
@@ -85,14 +85,14 @@
                 <input class="form__input form__input--checkbox form__input--hidden" type="checkbox" name="color" value="pink" id="pink"><label class="form__label form__label--checkbox" for="pink">Розовый</label>
               </li>
               <li>
-                <input class="form__input form__input--checkbox form__input--hidden" type="checkbox" name="color" value="orange" id="orange"><label class="form__label form__label--checkbox" for="orange">Оранжевый</label>
+                <input class="form__input form__input--checkbox form__input--hidden" type="checkbox" name="color" value="orange" id="orange"><label class="form__label form__label--checkbox form__label--checkbox-min" for="orange">Оранжевый</label>
               </li>
             </ul>
           </div>
         </fieldset>
         <fieldset class="fieldset">
-          <div class="form__wrapper">
-            <legend class="form__legend">ФИО</legend>
+          <div class="form__wrapper form__wrapper--name">
+            <p class="form__legend">ФИО</p>
             <ul class="form__name">
             <li class="form__list-item">
               <label class="form__label form__label--name" for="name">Имя:</label><input class="form__input form__input--name" type="text" name="name" id="name" placeholder="Введите ваше имя*">
@@ -108,19 +108,19 @@
         </fieldset>
         <fieldset class="form__tel fieldset fieldset--colored">
           <div class="form__wrapper form__wrapper--tel">
-            <legend class="form__legend form__legend--tel">Тел</legend>
+            <p class="form__legend form__legend--tel">Тел</p>
             <input class="form__input form__input--tel" type="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
           </div>
         </fieldset>
         <fieldset class="form__mail fieldset fieldset--colored">
           <div class="form__wrapper form__wrapper--mail">
-            <legend class="form__legend form__legend--mail">E-mail</legend>
+            <p class="form__legend form__legend--mail">E-mail</p>
             <input class="form__input form__input--mail" type="email" name="email" placeholder="Ваш Email*">
           </div>
         </fieldset>
         <fieldset class="form__text fieldset">
           <div class="form__wrapper form__wrapper--text">
-            <legend class="form__legend form__legend--text">Доп</legend>
+            <p class="form__legend form__legend--text">Доп</p>
             <textarea class="form__input form__input--text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
         </fieldset>
@@ -135,21 +135,21 @@
         </svg>
       </a>
       <ul class="page-footer__social social-list">
-        <li class="social-list__item">
+        <li class="social-list__item social-list__item--min">
           <a href="#">
-            <svg class="page-footer__icon page-footer__icon--social">
+            <svg class="page-footer__icon page-footer__icon--social page-footer__icon--social">
               <use xlink:href="img/sprite.svg#instagram"></use>
             </svg>
           </a>
         </li>
         <li class="social-list__item">
           <a href="#">
-            <svg class="page-footer__icon page-footer__icon--social">
+            <svg class="page-footer__icon page-footer__icon--social page-footer__icon--social-fb">
               <use xlink:href="img/sprite.svg#facebook"></use>
             </svg>
           </a>
         </li>
-        <li class="social-list__item">
+        <li class="social-list__item social-list__item--min">
           <a href="#">
             <svg class="page-footer__icon page-footer__icon--social">
               <use xlink:href="img/sprite.svg#twitter"></use>
@@ -168,5 +168,6 @@
     </footer>
     <script src="js/script.js"></script>
     <script src="js/picturefill.js"></script>
+    <script src="js/svg4everybody.js"></script>
   </body>
 </html>

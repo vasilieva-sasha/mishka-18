@@ -43,7 +43,6 @@
   .page-footer__logo {
     display: flex;
     align-items: center;
-    padding: 5px;
     flex: 1 0 30%;
   }
 }
@@ -58,11 +57,16 @@
   .page-footer__logo {
     align-items: center;
     flex: 1 0 33%;
+    padding: 0 0 7px 15px;
     cursor: pointer;
   }
 
   .page-footer__logo svg {
     height: 34px;
+  }
+
+  .page-footer__icon--social-fb {
+    width: 15px;
   }
 
   .page-footer__social {

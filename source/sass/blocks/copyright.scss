@@ -17,6 +17,10 @@
   font-weight: 700;
   line-height: 18px;
 
+  b {
+    padding: 0 0 8px;
+  }
+
   &:active {
     opacity: 0.3;
   }
@@ -30,16 +34,12 @@
   &:hover {
     color: $mail-link-color;
   }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 @media (min-width: $tablet) {
   .copyright {
     margin: 0;
-    padding: 0;
+    padding: 40px 0 35px 33px;
     align-items: center;
     justify-content: space-between;
     flex: 1 0 30%;
@@ -47,5 +47,15 @@
 
   .copyright__link {
     margin: 0;
+  }
+
+  .copyright__icon {
+    margin: 0 0 0 auto;
+  }
+}
+
+@media (min-width: $desktop) {
+  .copyright {
+    padding: 40px 18px 35px 140px;
   }
 }

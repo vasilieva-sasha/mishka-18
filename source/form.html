@@ -95,13 +95,13 @@
             <p class="form__legend">ФИО</p>
             <ul class="form__name">
             <li class="form__list-item">
-              <label class="form__label form__label--name" for="name">Имя:</label><input class="form__input form__input--name" type="text" name="name" id="name" placeholder="Введите ваше имя*">
+              <label class="form__label form__label--name" for="name">Имя:</label><input class="form__input form__input--name" type="text" name="name" id="name" placeholder="Введите ваше имя*" pattern="^[А-Яа-яЁё/-]+$" required>
             </li>
             <li class="form__list-item">
-              <label class="form__label form__label--name" for="last-name">Фамилия:</label><input class="form__input form__input--name" name="last-name" type="text" id="last-name" placeholder="Укажите фамилию*">
+              <label class="form__label form__label--name" for="last-name">Фамилия:</label><input class="form__input form__input--name" name="last-name" type="text" id="last-name" placeholder="Укажите фамилию*" pattern="^[А-Яа-яЁё/-]+$" required>
             </li>
             <li class="form__list-item">
-              <label class="form__label form__label--name" for="middle-name">Отчество:</label><input class="form__input form__input--name" name="middle-name" type="text" id="middle-name" placeholder="Отчество, если желаете">
+              <label class="form__label form__label--name" for="middle-name">Отчество:</label><input class="form__input form__input--name" name="middle-name" type="text" id="middle-name" placeholder="Отчество, если желаете" pattern="^[А-Яа-яЁё]+$">
             </li>
             </ul>
           </div>
@@ -109,7 +109,7 @@
         <fieldset class="form__tel fieldset fieldset--colored">
           <div class="form__wrapper form__wrapper--tel">
             <p class="form__legend form__legend--tel">Тел</p>
-            <input class="form__input form__input--tel" type="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+            <input class="form__input form__input--tel" type="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
             <span>
               <svg class="form__icon">
                 <use xlink:href="img/sprite.svg#tel"></use>
@@ -120,7 +120,7 @@
         <fieldset class="form__mail fieldset fieldset--colored">
           <div class="form__wrapper form__wrapper--mail">
             <p class="form__legend form__legend--mail">E-mail</p>
-            <input class="form__input form__input--mail" type="email" name="email" placeholder="Ваш Email*">
+            <input class="form__input form__input--mail" type="email" name="email" placeholder="Ваш Email*" required>
             <span>
               <svg class="form__icon">
                 <use xlink:href="img/sprite.svg#mail"></use>

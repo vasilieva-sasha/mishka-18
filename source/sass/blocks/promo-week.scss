@@ -22,6 +22,10 @@
   margin: 0 0 20px;
 }
 
+.promo-week__image {
+  width: 100%;
+}
+
 .promo-week__price {
   color: $text-color;
   font-size: 17px;
@@ -34,6 +38,10 @@
 .promo-week__header {
   padding: 5px 0 0;
   margin: 0 0 5px;
+}
+
+.promo-week__order {
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet) {
@@ -49,7 +57,7 @@
     position: absolute;
     display: block;
     left: 0;
-    top: -30px;
+    top: -35px;
     width: 100%;
     height: 24px;
     background: url("../img/bg-zigzag-fill.svg");
@@ -68,6 +76,7 @@
   }
 
   .promo-week__image {
+    width: 333px;
     float: right;
     margin: -290px 0 0;
   }
@@ -89,6 +98,7 @@
 
   .promo-week__order {
     width: 290px;
+    margin: 0;
   }
 }
 
@@ -139,6 +149,7 @@
   }
 
   .promo-week__image {
+    width: 525px;
     margin: -530px 20px 0 0;
   }
 }

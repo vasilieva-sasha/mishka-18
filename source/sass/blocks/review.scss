@@ -9,7 +9,6 @@
 }
 
 .review__text {
-  width: 260px;
   color: $text-color;
   font-size: 15px;
   line-height: 30px;
@@ -32,9 +31,10 @@
 }
 
 .review__toggle {
+  width: 260px;
   display: flex;
   padding: 40px 0;
-  margin: 0 0 10px;
+  margin: 0 auto 10px;
 }
 
 .review__prev {
@@ -50,6 +50,10 @@
   width: 130px;
   background: url("../img/icon-right-arrow.svg") no-repeat 50%;
   border: none;
+}
+
+.review__write {
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet) {

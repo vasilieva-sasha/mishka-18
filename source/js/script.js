@@ -4,7 +4,7 @@ var menuUser = document.querySelector(".site-list")
 var modal = document.querySelector(".modal")
 var buttonCart = document.querySelectorAll(".js-button-cart")
 var overlay = document.querySelector(".modal__overlay-js")
-var buttonAdd = document.querySelector("modal__button")
+var buttonAdd = document.querySelector(".modal__button")
 
 window.onload = function() {
     buttonT.classList.remove("navigation__toggle--no-js");
@@ -20,11 +20,13 @@ window.onload = function() {
     menuUser.classList.toggle("site-list--opened")
   });
 
-  buttonCart.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    modal.classList.add("modal--js-show");
-    overlay.classList.add("modal--js-show");
-  });
+  for (var i = 0; i < buttonCart.length; i++) {
+    buttonCart[i].addEventListener("click", function(evt) {
+      evt.preventDefault();
+      modal.classList.add("modal--js-show");
+      overlay.classList.add("modal--js-show");
+    })
+  };
 
   buttonAdd.addEventListener("click", function(evt) {
     evt.preventDefault();

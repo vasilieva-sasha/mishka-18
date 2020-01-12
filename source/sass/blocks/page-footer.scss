@@ -6,9 +6,21 @@
 
 .page-footer__logo {
   display: none;
+}
 
-  &:hover path {
-    fill: $mail-link-color;
+.page-footer__icon {
+  width: 101.615px;
+  height: 35px;
+  color: $text-color-dark;
+  transition-duration: 200ms;
+
+  &--social {
+    width: 22px;
+    height: 28px;
+  }
+
+  &:hover {
+    color: $mail-link-color;
   }
 
   &:active {
@@ -31,6 +43,7 @@
 
   .page-footer__logo {
     display: flex;
+    align-items: center;
     flex: 1 0 30%;
   }
 }
@@ -45,11 +58,16 @@
   .page-footer__logo {
     align-items: center;
     flex: 1 0 33%;
+    padding: 0 0 7px 15px;
     cursor: pointer;
   }
 
   .page-footer__logo svg {
     height: 34px;
+  }
+
+  .page-footer__icon--social-fb {
+    width: 15px;
   }
 
   .page-footer__social {

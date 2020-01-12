@@ -9,7 +9,6 @@
 }
 
 .review__text {
-  width: 260px;
   color: $text-color;
   font-size: 15px;
   line-height: 30px;
@@ -32,9 +31,10 @@
 }
 
 .review__toggle {
+  width: 260px;
   display: flex;
   padding: 40px 0;
-  margin: 0 0 10px;
+  margin: 0 auto 10px;
 }
 
 .review__prev {
@@ -52,14 +52,18 @@
   border: none;
 }
 
+.review__write {
+  margin: 0 auto;
+}
+
 @media (min-width: $tablet) {
   .review {
     width: 100%;
     position: relative;
     display: block;
     background: url("../img/review@1x.jpg") no-repeat left 10px;
-    padding: 90px 50px;
-    margin: 0 0 25px;
+    padding: 90px calc(50% - 337px);
+    margin: 0 0 20px;
   }
 
   @media (min-resolution: 1.5dppx) {
@@ -71,20 +75,21 @@
 
   .review__text {
     width: 650px;
-    margin: 50px 0 55px;
+    margin: 48px 0 58px;
+    font-size: 17px;
   }
 
   .review__toggle {
     position: absolute;
     right: 50px;
-    bottom: 50px;
-    width: 168px;
+    bottom: 55px;
+    width: 172px;
     order: 4;
   }
 
   .review__write {
     position: absolute;
-    right: 45px;
+    right: 50px;
     top: 90px;
     width: 174px;
     text-align: center;
@@ -95,9 +100,9 @@
 @media (min-width: $desktop) {
   .review {
     width: 1054px;
-    min-height: 457px;
+    min-height: 465px;
     margin: 0 auto 67px;
-    padding: 80px 0 0 170px;
+    padding: 84px 0 0 176px;
   }
 
   .review__header {
@@ -116,12 +121,13 @@
   }
 
   .review__toggle {
-    top: 280px;
+    top: 290px;
     right: 5px;
   }
 
   .review__prev {
     cursor: pointer;
+    transition-duration: 200ms;
 
     &:hover {
       opacity: 0.6;
@@ -134,6 +140,7 @@
 
   .review__next {
     cursor: pointer;
+    transition-duration: 200ms;
 
     &:hover {
       opacity: 0.6;

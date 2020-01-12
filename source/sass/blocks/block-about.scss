@@ -23,8 +23,7 @@
 }
 
 .block-about__item {
-  width: 360px;
-  padding: 55px 85px 29px 0;
+  padding: 55px 0 29px 0;
   background-position-x: 10%;
 
   &--eco {
@@ -61,6 +60,7 @@
     width: 100%;
     position: relative;
     padding: 0 calc(50% - 294px) 0 calc(50% - 334px);
+    margin: 0 0 20px;
   }
 
   .block-about::before {
@@ -75,27 +75,52 @@
   }
 
   .block-about__header {
-    padding: 70px 0 30px;
+    padding: 68px 0 30px;
     margin: 0 0 20px;
   }
 
   .block-about__list {
-    height: 480px;
+    width: 628px;
     column-count: 2;
   }
 
   .block-about__item {
+    width: 314px;
     font-size: 20px;
     line-height: 22px;
-    padding: 55px 60px 55px 0;
-    background-position: 5px 0;
+    padding: 55px 30px 55px 0;
+    background-position: 10px 0;
+
+    &--money {
+      background-position: 0 5px;
+    }
+
+    &--heart {
+      background-position: 7px 10px;
+    }
+
+    &--knitting {
+      background-position: 15px 2px;
+    }
+
+    &--rocket {
+      background-position: 5px 5px;
+    }
+
+    &--gift {
+      background-position: 15px 5px;
+    }
+
+    &--padding {
+      padding: 55px 30px 55px 10px;
+    }
   }
 }
 
 @media (min-width: $desktop) {
   .block-about {
     padding: 0 calc(50% - 540px);
-    margin: 0 0 10px;
+    margin: 0 0 24px;
   }
 
   .block-about::before {

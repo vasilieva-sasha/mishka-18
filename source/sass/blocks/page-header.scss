@@ -11,6 +11,18 @@
   justify-content: center;
   padding: 15px 0;
   border-bottom: 1px solid $border-color-header;
+
+  &:hover img {
+    opacity: 0.6;
+  }
+
+  &:active img {
+    opacity: 0.3;
+  }
+}
+
+.page-header__logo img {
+  transition-duration: 200ms;
 }
 
 .page-header__input-search {
@@ -30,34 +42,47 @@
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
+.page-header__icon {
+  width: 20px;
+  height: 20px;
+  opacity: 0.2;
+  color: $text-color-dark;
+  transition-duration: 200ms;
+
+  &:hover {
+    color: $design-color;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .page-header__cart {
   display: block;
   width: 320px;
   padding: 28px 30px;
   margin: 0 auto 0 0;
   color: $text-color-dark;
+  transition-duration: 200ms;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-header__button {
   flex-basis: 20%;
   text-align: end;
   background: transparent;
-  opacity: 0.2;
   padding: 0;
   margin: 0 0 0 auto;
   border: none;
-
-  &:hover {
-    opacity: 1;
-  }
-
-  &:hover path {
-    fill: $design-color;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 .page-header__text {
@@ -128,14 +153,6 @@
     border-bottom: 1px solid $border-color-header;
     order: 2;
     padding: 10px 0 0 45px;
-
-    &:hover img {
-      opacity: 0.6;
-    }
-
-    &:active img {
-      opacity: 0.3;
-    }
   }
 
   .page-header__button {
@@ -150,13 +167,5 @@
 
   .page-header__cart {
     min-height: 88px;
-
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
   }
 }

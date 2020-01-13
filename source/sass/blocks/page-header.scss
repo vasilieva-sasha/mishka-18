@@ -148,14 +148,14 @@
 
   .page-header__logo {
     display: block;
-    height: 88px;
-    flex: 1 0 10%;
+    flex: 0 1 10%;
     border-bottom: 1px solid $border-color-header;
     order: 2;
-    padding: 10px 0 0 45px;
+    padding: 10px 102px 0 35px;
   }
 
   .page-header__button {
+    padding: 10px 0 0;
     cursor: pointer;
   }
 
@@ -167,5 +167,6 @@
 
   .page-header__cart {
     min-height: 88px;
+    padding: 30px;
   }
 }

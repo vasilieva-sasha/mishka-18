@@ -18,6 +18,7 @@
 @media (min-width: $tablet) {
   .site-list--user {
     display: flex;
+    flex-wrap: wrap;
     flex: 0 1 52%;
     margin: 0 0 0 auto;
     border-bottom: 1px solid $border-color-header;
@@ -36,15 +37,15 @@
 
 @media (min-width: $desktop) {
   .site-list--user {
-    height: 88px;
     flex: 1 0 25%;
     order: 3;
-    padding: 0 calc(50% - 570px) 0 0;
+    padding: 0 calc(50% - 575px) 0 0;
     margin: 0;
     border-bottom: 1px solid $border-color-header;
   }
 
   .site-list__item--search {
     width: 85px;
+    height: 88px;
   }
 }

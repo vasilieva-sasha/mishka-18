@@ -80,6 +80,10 @@
     display: flex;
   }
 
+  .catalog-item__link {
+    flex-shrink: 0;
+  }
+
   .catalog-item__wrapper {
     width: 100%;
   }

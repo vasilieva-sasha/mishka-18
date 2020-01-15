@@ -148,7 +148,7 @@
 
   .page-header__logo {
     display: block;
-    flex: 0 1 10%;
+    flex-grow: 0;
     border-bottom: 1px solid $border-color-header;
     order: 2;
     padding: 10px 102px 0 35px;

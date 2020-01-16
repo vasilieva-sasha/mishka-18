@@ -22,7 +22,9 @@
 
 @media (min-width: $desktop) {
   .social-list {
-    padding: 30px 135px 30px 95px;
+    flex: none;
+    width: 350px;
+    padding: 30px 120px 30px 90px;
   }
 
   .social-list__item--min {

@@ -4,9 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка. Форма Заказа</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <a class="page-header__logo" href="index.html" aria-label="Главная страница">
         <picture>
@@ -26,7 +29,7 @@
         <li class="site-list__item site-list__item--button site-list__item--search">
           <button class="page-header__button page-header__button--search" type="button">
             <svg class="page-header__icon" id="search" width="17.6px" height="17.6px">
-              <use xlink:href="img/sprite.svg#search"></use>
+              <use xlink:href="#icon-search"></use>
             </svg>
           </button>
           <input class="page-header__input-search" type="text" aria-label="Запрос" placeholder="Поиск по сайту">
@@ -34,7 +37,7 @@
         <li class="site-list__item site-list__item--button">
           <button class="page-header__button page-header__button--cart" type="button">
             <svg class="page-header__icon" id="cart" width="20.294px" height="18.849px">
-              <use xlink:href="img/sprite.svg#cart"></use>
+              <use xlink:href="#icon-cart"></use>
             </svg>
           </button>
           <a class="page-header__cart" href="#">Корзина: пока пуста</a>
@@ -57,7 +60,7 @@
             <p class="form__legend">Тип</p>
             <ul class="form__type">
               <li>
-                <input class="form__input form__input--radio form__input--hidden" type="radio" id="accessories" name="type" value="accessory" checked><label class="form__label form__label--radio form__label--acc" for="accessories">Аксессуар для интерьера</label>
+                <input class="form__input form__input--radio form__input--hidden" type="radio" id="accessories" name="type" value="accessory" checked=""><label class="form__label form__label--radio form__label--acc" for="accessories">Аксессуар для интерьера</label>
               </li>
               <li>
                 <input class="form__input form__input--radio form__input--hidden" type="radio" id="toy" name="type" value="toy"><label class="form__label form__label--radio" for="toy">Детская игрушка</label>
@@ -70,10 +73,10 @@
             <p class="form__legend">Цвет</p>
             <ul class="form__color">
               <li>
-                <input class="form__input form__input--checkbox form__input--hidden" type="checkbox" name="color" value="white" id="white" checked><label class="form__label form__label--checkbox" for="white">Белый</label>
+                <input class="form__input form__input--checkbox form__input--hidden" type="checkbox" name="color" value="white" id="white" checked=""><label class="form__label form__label--checkbox" for="white">Белый</label>
               </li>
               <li>
-                <input class="form__input form__input--checkbox form__input--hidden" type="checkbox" name="color" value="grey" id="grey" checked><label class="form__label form__label--checkbox" for="grey">Серый</label>
+                <input class="form__input form__input--checkbox form__input--hidden" type="checkbox" name="color" value="grey" id="grey" checked=""><label class="form__label form__label--checkbox" for="grey">Серый</label>
               </li>
               <li>
                 <input class="form__input form__input--checkbox form__input--hidden" type="checkbox" name="color" value="blue" id="blue"><label class="form__label form__label--checkbox" for="blue">«Тиффани»</label>
@@ -95,10 +98,10 @@
             <p class="form__legend">ФИО</p>
             <ul class="form__name">
             <li class="form__list-item">
-              <label class="form__label form__label--name" for="name">Имя:</label><input class="form__input form__input--name" type="text" name="name" id="name" placeholder="Введите ваше имя*" pattern="^[А-Яа-яЁё/-]+$" required>
+              <label class="form__label form__label--name" for="name">Имя:</label><input class="form__input form__input--name" type="text" name="name" id="name" placeholder="Введите ваше имя*" pattern="^[А-Яа-яЁё/-]+$" required="">
             </li>
             <li class="form__list-item">
-              <label class="form__label form__label--name" for="last-name">Фамилия:</label><input class="form__input form__input--name" name="last-name" type="text" id="last-name" placeholder="Укажите фамилию*" pattern="^[А-Яа-яЁё/-]+$" required>
+              <label class="form__label form__label--name" for="last-name">Фамилия:</label><input class="form__input form__input--name" name="last-name" type="text" id="last-name" placeholder="Укажите фамилию*" pattern="^[А-Яа-яЁё/-]+$" required="">
             </li>
             <li class="form__list-item">
               <label class="form__label form__label--name" for="middle-name">Отчество:</label><input class="form__input form__input--name" name="middle-name" type="text" id="middle-name" placeholder="Отчество, если желаете" pattern="^[А-Яа-яЁё]+$">
@@ -109,23 +112,19 @@
         <fieldset class="form__tel fieldset fieldset--colored">
           <div class="form__wrapper form__wrapper--tel">
             <p class="form__legend form__legend--tel">Тел</p>
-            <input class="form__input form__input--tel" type="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-            <span>
-              <svg class="form__icon" width="24.829px" height="24.333px">
-                <use xlink:href="img/sprite.svg#tel"></use>
-              </svg>
-            </span>
+            <input class="form__input form__input--tel" type="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="^[+]7[0-9]{10}$" required="">
+            <svg class="form__icon" width="24.829px" height="24.333px">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
           </div>
         </fieldset>
         <fieldset class="form__mail fieldset fieldset--colored">
           <div class="form__wrapper form__wrapper--mail">
             <p class="form__legend form__legend--mail">E-mail</p>
-            <input class="form__input form__input--mail" type="email" name="email" placeholder="Ваш Email*" required>
-            <span>
-              <svg class="form__icon" width="32px" height="32px">
-                <use xlink:href="img/sprite.svg#mail"></use>
-              </svg>
-            </span>
+            <input class="form__input form__input--mail" type="email" name="email" placeholder="Ваш Email*" required="">
+            <svg class="form__icon" width="32px" height="32px">
+              <use xlink:href="#icon-mail"></use>
+            </svg>
           </div>
         </fieldset>
         <fieldset class="form__text fieldset">
@@ -139,30 +138,30 @@
       </form>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo">
+      <a class="page-footer__logo" href="index.html">
         <svg class="page-footer__icon" id="footer-logo" width="101.615px" height="34.056px">
-          <use xlink:href="img/sprite.svg#footer-logo"></use>
+          <use xlink:href="#icon-logo-footer"></use>
         </svg>
       </a>
       <ul class="page-footer__social social-list">
         <li class="social-list__item social-list__item--min">
           <a href="#" aria-label="Мы в Инстраграм">
             <svg class="page-footer__icon page-footer__icon--social page-footer__icon--social" width="21.769px" height="21.334px">
-              <use xlink:href="img/sprite.svg#instagram"></use>
+              <use xlink:href="#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li class="social-list__item">
           <a href="#" aria-label="Мы в Фейсбук">
             <svg class="page-footer__icon page-footer__icon--social page-footer__icon--social-fb" width="14.962px" height="27.718px">
-              <use xlink:href="img/sprite.svg#facebook"></use>
+              <use xlink:href="#icon-fb"></use>
             </svg>
           </a>
         </li>
         <li class="social-list__item social-list__item--min">
           <a href="#" aria-label="Мы в Твиттер">
             <svg class="page-footer__icon page-footer__icon--social" width="23.494px" height="20.168px">
-              <use xlink:href="img/sprite.svg#twitter"></use>
+              <use xlink:href="#icon-twitter"></use>
             </svg>
           </a>
         </li>
@@ -171,7 +170,7 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт htmlacademy">
           <b>Разработано</b>
           <svg class="copyright__icon" width="26.943px" height="34.09px">
-            <use xlink:href="img/sprite.svg#academy"></use>
+            <use xlink:href="#icon-htmlacademy"></use>
           </svg>
         </a>
       </div>

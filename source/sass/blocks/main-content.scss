@@ -43,11 +43,11 @@
   color: $bg-color;
 
   &--interior {
-    background: $design-color url("../img/icon-interior.svg") no-repeat 100%;
+    background: $design-color url("../img/interior.svg") no-repeat 100%;
   }
 
   &--toys {
-    background: $design-color-dark url("../img/icon-toy.svg") no-repeat 100%;
+    background: $design-color-dark url("../img/toy.svg") no-repeat 100%;
   }
 }
 
@@ -104,6 +104,7 @@
     .main-content {
       background: $bg-color-light url("../img/hero-desktop@2x.jpg") no-repeat 50% -65px;
       background-size: 1150px auto;
+      margin: 0;
     }
   }
 

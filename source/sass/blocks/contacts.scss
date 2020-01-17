@@ -97,7 +97,7 @@
   .contacts__header {
     width: 100%;
     padding: 81px 0 40px;
-    background: url("../img/icon-flag.svg") no-repeat 621px 65px;
+    background: url("../img/flag.svg") no-repeat 621px 65px;
   }
 
   .contacts__table {
@@ -199,8 +199,10 @@
 
   .contacts__map {
     position: absolute;
-    right: -755px;
     top: 100px;
+    width: 525px;
+    height: 457px;
+    margin: 0 0 0 540px;
     background: url("../img/map-desktop@1x.jpg") no-repeat;
   }
 
@@ -218,7 +220,7 @@
 
   .contacts__write-us {
     position: absolute;
-    left: 27%;
-    bottom: 35px;
+    bottom: 80px;
+    margin: 0 0 0 190px;
   }
 }

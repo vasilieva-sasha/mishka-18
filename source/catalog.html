@@ -4,9 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <a class="page-header__logo" href="index.html" aria-label="Главная страница">
         <picture>
@@ -18,7 +21,7 @@
       <nav class="navigation navigation--opened">
         <button class="navigation__toggle navigation__toggle--no-js navigation__toggle--opened" type="button"></button>
         <ul class="navigation__menu navigation__menu--grey">
-          <li class="navigation__item navigation__item--catalog"><a class="navigation__link" href="catalog.html">Каталог товаров</a></li>
+          <li class="navigation__item navigation__item--catalog"><a class="navigation__link" href="#">Каталог товаров</a></li>
           <li class="navigation__item navigation__item--knitting"><a class="navigation__link" href="form.html">Вязание на заказ</a></li>
         </ul>
       </nav>
@@ -26,7 +29,7 @@
         <li class="site-list__item site-list__item--button site-list__item--search">
           <button class="page-header__button page-header__button--search" type="button">
             <svg class="page-header__icon" id="search" width="17.6px" height="17.6px">
-              <use xlink:href="img/sprite.svg#search"></use>
+              <use xlink:href="#icon-search"></use>
             </svg>
           </button>
           <input class="page-header__input-search" type="text" aria-label="Запрос" placeholder="Поиск по сайту">
@@ -34,7 +37,7 @@
         <li class="site-list__item site-list__item--button">
           <button class="page-header__button page-header__button--cart" type="button">
             <svg class="page-header__icon" width="20.294px" height="18.849px">
-              <use xlink:href="img/sprite.svg#cart"></use>
+              <use xlink:href="#icon-cart"></use>
             </svg>
           </button>
           <a class="page-header__cart" href="#">Корзина: пока пуста</a>
@@ -51,7 +54,7 @@
         <h1 class="catalog-main__header heading heading--big">Каталог товаров</h1>
         <ul class="catalog__list">
           <li class="catalog__item catalog-item">
-            <a class="catalog-item__link" href=#>
+            <a class="catalog-item__link" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp , img/photo-hare-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp , img/photo-hare-tablet@2x.webp 2x">
@@ -62,7 +65,7 @@
               </picture>
             </a>
             <div class="catalog-item__wrapper">
-              <h3 class="catalog-item__header"><a href=#>Зайчик-попрыгайчик</a></h3>
+              <h3 class="catalog-item__header"><a href="#">Зайчик-попрыгайчик</a></h3>
               <p class="catalog-item__info">
                 Рост 30 см, вес 200 г
               </p>
@@ -70,14 +73,14 @@
                 <b>1 200 руб.</b>
                 <button class="catalog-item__cart js-button-cart">
                   <svg class="catalog-item__icon" width="20.294px" height="18.849px">
-                    <use xlink:href="img/sprite.svg#cart"></use>
+                    <use xlink:href="#icon-cart"></use>
                   </svg>
                 </button>
               </p>
             </div>
           </li>
           <li class="catalog__item catalog-item">
-            <a class="catalog-item__link" href=#>
+            <a class="catalog-item__link" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp , img/photo-bowl-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp , img/photo-bowl-tablet@2x.webp 2x">
@@ -88,7 +91,7 @@
               </picture>
             </a>
             <div class="catalog-item__wrapper">
-              <h3 class="catalog-item__header"><a href=#>Корзинка для белья</a></h3>
+              <h3 class="catalog-item__header"><a href="#">Корзинка для белья</a></h3>
               <p class="catalog-item__info">
                 Диаметр 15 см, высота 10 см
               </p>
@@ -96,14 +99,14 @@
                 <b>690 руб.</b>
                 <button class="catalog-item__cart js-button-cart">
                   <svg class="catalog-item__icon" width="20.294px" height="18.849px">
-                    <use xlink:href="img/sprite.svg#cart"></use>
+                    <use xlink:href="#icon-cart"></use>
                   </svg>
                 </button>
               </p>
             </div>
           </li>
           <li class="catalog__item catalog-item">
-            <a class="catalog-item__link" href=#>
+            <a class="catalog-item__link" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp , img/photo-toys-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.webp , img/photo-toys-tablet@2x.webp 2x">
@@ -114,7 +117,7 @@
               </picture>
             </a>
             <div class="catalog-item__wrapper">
-              <h3 class="catalog-item__header"><a href=#>Большая корзинка <br>для игрушек</a></h3>
+              <h3 class="catalog-item__header"><a href="#">Большая корзинка <br>для игрушек</a></h3>
               <p class="catalog-item__info catalog-item__info--min">
                 Диаметр 30 см, высота 30 см
               </p>
@@ -122,7 +125,7 @@
                 <b>1 500 руб.</b>
                 <button class="catalog-item__cart js-button-cart">
                   <svg class="catalog-item__icon" width="20.294px" height="18.849px">
-                    <use xlink:href="img/sprite.svg#cart"></use>
+                    <use xlink:href="#icon-cart"></use>
                   </svg>
                 </button>
               </p>
@@ -153,30 +156,30 @@
       </section>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo">
+      <a class="page-footer__logo" href="index.html">
         <svg class="page-footer__icon" id="footer-logo" width="101.615px" height="34.056px">
-          <use xlink:href="img/sprite.svg#footer-logo"></use>
+          <use xlink:href="#icon-logo-footer"></use>
         </svg>
       </a>
       <ul class="page-footer__social social-list">
         <li class="social-list__item social-list__item--min">
           <a href="#" aria-label="Мы в Инстраграм">
             <svg class="page-footer__icon page-footer__icon--social page-footer__icon--social" width="21.769px" height="21.334px">
-              <use xlink:href="img/sprite.svg#instagram"></use>
+              <use xlink:href="#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li class="social-list__item">
           <a href="#" aria-label="Мы в Фейсбук">
             <svg class="page-footer__icon page-footer__icon--social page-footer__icon--social-fb" width="14.962px" height="27.718px">
-              <use xlink:href="img/sprite.svg#facebook"></use>
+              <use xlink:href="#icon-fb"></use>
             </svg>
           </a>
         </li>
         <li class="social-list__item social-list__item--min">
           <a href="#" aria-label="Мы в Твиттер">
             <svg class="page-footer__icon page-footer__icon--social" width="23.494px" height="20.168px">
-              <use xlink:href="img/sprite.svg#twitter"></use>
+              <use xlink:href="#icon-twitter"></use>
             </svg>
           </a>
         </li>
@@ -185,7 +188,7 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт htmlacademy">
           <b>Разработано</b>
           <svg class="copyright__icon" width="26.943px" height="34.09px">
-            <use xlink:href="img/sprite.svg#academy"></use>
+            <use xlink:href="#icon-htmlacademy"></use>
           </svg>
         </a>
       </div>
@@ -198,7 +201,7 @@
           <div class="modal__wrapper">
             <p class="modal__legend">Выберите размер:</p>
             <ul class="modal__list">
-              <li><input class="modal__input" type="radio" name="size" value="small" id="small" aria-label="маленький размер"  checked><label class="modal__label" for="small">s</label></li>
+              <li><input class="modal__input" type="radio" name="size" value="small" id="small" aria-label="маленький размер" checked=""><label class="modal__label" for="small">s</label></li>
               <li><input class="modal__input" type="radio" name="size" value="medium" id="medium" aria-label="средний размер"><label class="modal__label" for="medium">m</label></li>
               <li><input class="modal__input" type="radio" name="size" value="large" id="large" aria-label="большой размер"><label class="modal__label" for="large">l</label></li>
             </ul>

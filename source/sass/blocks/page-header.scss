@@ -42,21 +42,21 @@
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
+.page-header__button:hover .page-header__icon {
+  color: $design-color;
+  opacity: 1;
+}
+
+.page-header__button:active .page-header__icon {
+  opacity: 0.3;
+}
+
 .page-header__icon {
-  width: 20px;
-  height: 20px;
+  width: 17.6px;
+  height: 17.6px;
   opacity: 0.2;
   color: $text-color-dark;
   transition-duration: 200ms;
-
-  &:hover {
-    color: $design-color;
-    opacity: 1;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 .page-header__cart {
@@ -148,7 +148,7 @@
 
   .page-header__logo {
     display: block;
-    flex: 0 1 10%;
+    flex-grow: 0;
     border-bottom: 1px solid $border-color-header;
     order: 2;
     padding: 10px 102px 0 35px;

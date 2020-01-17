@@ -20,30 +20,35 @@ window.onload = function() {
     menuUser.classList.toggle("site-list--opened")
   });
 
-  for (var i = 0; i < buttonCart.length; i++) {
-    buttonCart[i].addEventListener("click", function(evt) {
-      evt.preventDefault();
-      modal.classList.add("modal--js-show");
-      overlay.classList.add("modal--js-show");
-    })
-  };
+  if ("buttonCart") {
+    for (var i = 0; i < buttonCart.length; i++) {
+      buttonCart[i].addEventListener("click", function(evt) {
+        evt.preventDefault();
+        modal.classList.add("modal--js-show");
+        overlay.classList.add("modal--js-show");
+      })
+    };
 
-  buttonAdd.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    modal.classList.remove("modal--js-show");
-    overlay.classList.remove("modal--js-show");
-  });
-
-  overlay.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    modal.classList.remove("modal--js-show");
-    overlay.classList.remove("modal--js-show");
-  });
-
-  window.addEventListener("keydown", function(evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
+    if ("buttonAdd") {
+      buttonAdd.addEventListener("click", function(evt) {
+        evt.preventDefault();
         modal.classList.remove("modal--js-show");
         overlay.classList.remove("modal--js-show");
-    }
-  });
+      })
+    };
+
+    if ("overlay") {
+      overlay.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        modal.classList.remove("modal--js-show");
+        overlay.classList.remove("modal--js-show");
+      })
+    };
+
+    window.addEventListener("keydown", function(evt) {
+      if (evt.keyCode === 27) {
+        evt.preventDefault();
+          modal.classList.remove("modal--js-show");
+          overlay.classList.remove("modal--js-show");
+      }
+  })};

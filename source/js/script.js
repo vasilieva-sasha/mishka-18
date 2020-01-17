@@ -20,16 +20,16 @@ window.onload = function() {
     menuUser.classList.toggle("site-list--opened")
   });
 
-  if ("buttonCart") {
+  if (buttonCart) {
     for (var i = 0; i < buttonCart.length; i++) {
       buttonCart[i].addEventListener("click", function(evt) {
         evt.preventDefault();
         modal.classList.add("modal--js-show");
         overlay.classList.add("modal--js-show");
       })
-    };
+    }};
 
-    if ("buttonAdd") {
+    if (buttonAdd) {
       buttonAdd.addEventListener("click", function(evt) {
         evt.preventDefault();
         modal.classList.remove("modal--js-show");
@@ -37,7 +37,7 @@ window.onload = function() {
       })
     };
 
-    if ("overlay") {
+    if (overlay) {
       overlay.addEventListener("click", function(evt) {
         evt.preventDefault();
         modal.classList.remove("modal--js-show");
@@ -51,4 +51,4 @@ window.onload = function() {
           modal.classList.remove("modal--js-show");
           overlay.classList.remove("modal--js-show");
       }
-  })};
+  });

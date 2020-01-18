@@ -262,7 +262,7 @@
 
 @media (min-width: $tablet) {
   .form {
-    margin: 0 0 52px;
+    margin: 0 0 55px;
   }
 
   .form__wrapper {
@@ -275,8 +275,8 @@
     }
 
     &--tel {
-      padding: 50px 0 0;
-      margin: 0 0 10px;
+      padding: 48px 0 0;
+      margin: 0 0 8px;
     }
 
     &--mail {
@@ -285,7 +285,7 @@
     }
 
     &--name {
-      margin: 0 0 30px;
+      margin: 0 0 25px;
     }
 
     &--text {
@@ -409,13 +409,13 @@
     font-size: 17px;
     display: block;
     float: right;
-    margin: 30px 6.5% 0;
+    margin: 35px 6.5% 0;
   }
 
   .form__button {
     width: 230px;
     padding: 13px 0;
-    margin: 15px 0 0 6.5%;
+    margin: 20px 0 0 6.5%;
   }
 
   .form__list-item {

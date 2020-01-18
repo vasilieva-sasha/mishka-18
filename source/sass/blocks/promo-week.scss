@@ -32,12 +32,12 @@
   font-weight: 700;
   line-height: 24px;
   text-align: center;
-  margin: 20px 0 25px;
+  margin: 19px 0 26px;
 }
 
 .promo-week__header {
   padding: 5px 0 0;
-  margin: 0 0 5px;
+  margin: 0;
 }
 
 .promo-week__order {
@@ -48,7 +48,7 @@
   .promo-week {
     width: 100%;
     position: relative;
-    padding: 20px calc(50% - 334px) 0;
+    padding: 16px calc(50% - 335px) 0;
     margin: 0 0 50px;
   }
 
@@ -85,7 +85,7 @@
     width: 290px;
     font-size: 17px;
     line-height: 30px;
-    padding: 7px 0 0;
+    padding: 10px 0 0;
     margin: 0 0 37px;
   }
 
@@ -117,25 +117,26 @@
 
   .promo-week__wrapper {
     position: relative;
-    width: 670px;
+    width: 710px;
     margin: 110px 0 38px;
     z-index: 2;
   }
 
   .promo-week__header {
+    padding: 0;
     order: 2;
   }
 
   .promo-week__adv {
     align-self: flex-end;
-    padding: 0 0 10px;
+    padding: 0 0 5px;
     margin: 0 0 0 60px;
   }
 
   .promo-week__info {
     font-size: 17px;
     line-height: 30px;
-    margin: 0 0 45px 190px;
+    margin: 0 0 50px 190px;
   }
 
   .promo-week__price {
@@ -150,6 +151,6 @@
 
   .promo-week__image {
     width: 525px;
-    margin: -530px 20px 0 0;
+    margin: -525px 15px 0 0;
   }
 }

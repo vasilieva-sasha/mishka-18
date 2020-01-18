@@ -16,7 +16,7 @@
 }
 
 .promo-table__detail {
-  padding: 8px 0 8px 20px;
+  padding: 8px 0 9px 22px;
   border-bottom: 1px solid $border-color-table;
 }
 
@@ -33,16 +33,21 @@
   }
 
   .promo-table__header {
+    width: 88px;
     padding: 10px 0;
   }
 }
 
 @media (min-width: $desktop) {
   .promo-table {
-    margin: 0 0 105px 190px;
+    margin: 0 0 110px 190px;
+  }
+
+  .promo-table__header {
+    width: 97px;
   }
 
   .promo-table__detail {
-    padding: 11px 0;
+    padding: 10px 0;
   }
 }

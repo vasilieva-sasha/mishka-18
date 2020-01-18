@@ -13,10 +13,10 @@
 
 @media (min-width: $tablet) {
   .social-list {
-    flex: 1 0 33%;
+    width: 223px;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 47px 15px;
+    padding: 20px 45px 20px 38px;
   }
 }
 
@@ -24,7 +24,7 @@
   .social-list {
     flex: none;
     width: 350px;
-    padding: 30px 120px 30px 90px;
+    padding: 30px 105px;
   }
 
   .social-list__item--min {

@@ -120,7 +120,7 @@
 
   .navigation__link {
     width: auto;
-    padding: 18px 24px;
+    padding: 18px 17px 18px 22px;
   }
 }
 
@@ -152,7 +152,7 @@
 
   .navigation__link {
     @include text-dark;
-    padding: 30px 45px 30px 35px;
+    padding: 31px 35px 30px 35px;
     line-height: 24px;
     min-height: 87px;
 

@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   padding: 0 9.4%;
-  margin: 0 0 25px;
+  margin: 0 0 27px;
 
   &::before {
     content: "";
@@ -23,31 +23,31 @@
 }
 
 .block-about__item {
-  padding: 55px 0 29px 0;
+  padding: 55px 0 28px;
   background-position-x: 10%;
 
   &--eco {
-    background: url("../img/feature-flower.svg") no-repeat 10px 0;
+    background: url("../img/feature-flower.svg") no-repeat 9px 1px;
   }
 
   &--money {
-    background: url("../img/feature-money.svg") no-repeat 0 0;
+    background: url("../img/feature-money.svg") no-repeat 0 1px;
   }
 
   &--heart {
-    background: url("../img/feature-heart.svg") no-repeat 10px 5px;
+    background: url("../img/feature-heart.svg") no-repeat 9px 6px;
   }
 
   &--knitting {
-    background: url("../img/feature-ball.svg") no-repeat 5px 0;
+    background: url("../img/feature-ball.svg") no-repeat 4px 3px;
   }
 
   &--rocket {
-    background: url("../img/feature-rocket.svg") no-repeat 0 0;
+    background: url("../img/feature-rocket.svg") no-repeat 0 5px;
   }
 
   &--gift {
-    background: url("../img/feature-gift.svg") no-repeat 0 0;
+    background: url("../img/feature-gift.svg") no-repeat 2px 2px;
   }
 }
 
@@ -75,12 +75,12 @@
   }
 
   .block-about__header {
-    padding: 68px 0 30px;
+    padding: 70px 0 30px;
     margin: 0 0 20px;
   }
 
   .block-about__list {
-    width: 628px;
+    width: 648px;
     column-count: 2;
   }
 
@@ -100,19 +100,19 @@
     }
 
     &--knitting {
-      background-position: 15px 2px;
+      background-position: 5px 2px;
     }
 
     &--rocket {
-      background-position: 5px 5px;
+      background-position: 0 5px;
     }
 
     &--gift {
-      background-position: 15px 5px;
+      background-position: 5px 5px;
     }
 
     &--padding {
-      padding: 55px 20px 55px 10px;
+      padding: 55px 20px 55px 0;
     }
   }
 }
@@ -131,11 +131,11 @@
 
   .block-about__header {
     padding: 85px 0 50px;
-    margin: 0 0 0 190px;
+    margin: 0 0 0 185px;
   }
 
   .block-about__list {
-    width: 700px;
+    width: 680px;
     margin: 0 0 0 190px;
   }
 

@@ -10,7 +10,7 @@
   width: 100%;
   height: 6px;
   left: 0;
-  top: 0;
+  top: 5px;
   background: url("../img/bg-zigzag-line.svg") repeat-x;
 }
 
@@ -60,7 +60,7 @@
 .contacts__map {
   width: 100%;
   height: 457px;
-  margin: 0 0 35px;
+  margin: 0 0 38px;
   background: url("../img/map-mobile@1x.jpg") no-repeat;
 }
 
@@ -152,7 +152,7 @@
   .contacts__write-us {
     display: block;
     width: 230px;
-    margin: 50px auto;
+    margin: 53px auto 0;
   }
 }
 
@@ -163,7 +163,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     padding: 0 calc(50% - 540px);
-    margin: 0 0 25px;
+    margin: 0 0 20px;
   }
 
   .contacts::before {
@@ -175,7 +175,7 @@
   .contacts__header {
     padding: 170px 0 20px 185px;
     background-position: 74px 158px;
-    margin: 0 0 25px;
+    margin: 0 0 30px;
   }
 
   .contacts__table {
@@ -191,6 +191,7 @@
 
   .contacts__heading {
     flex: none;
+    margin: 0 10px 0 0;
   }
 
   .contacts__address {

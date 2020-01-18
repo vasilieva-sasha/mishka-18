@@ -5,7 +5,7 @@
 
 .catalog-item__photo {
   width: 100%;
-  margin: 0 0 20px;
+  margin: 0 0 24px;
 }
 
 .catalog-item__wrapper {
@@ -35,7 +35,7 @@
   color: $text-color;
   font-size: 13px;
   line-height: 30px;
-  margin: 0 0 18px;
+  margin: 0 0 19px;
 }
 
 .catalog-item__price {
@@ -53,6 +53,7 @@
 .catalog-item__cart {
   border: none;
   background-color: transparent;
+  padding: 0;
   margin: 0 0 0 auto;
 }
 
@@ -126,6 +127,7 @@
   .catalog-item {
     display: block;
     flex-grow: 0;
+    margin: 0 0 60px;
     transition-duration: 200ms;
 
     &:hover {
@@ -138,6 +140,7 @@
   }
 
   .catalog-item__cart {
+    padding: 0 6px 0;
     cursor: pointer;
   }
 
@@ -150,6 +153,6 @@
   }
 
   .catalog-item__price {
-    padding: 23px 0;
+    padding: 23px 0 25px;
   }
 }

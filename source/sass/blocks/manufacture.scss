@@ -5,8 +5,8 @@
 
 .manufacture__header {
   line-height: 24px;
-  padding: 20px 40px 25px 90px;
-  background: url("../img/video.svg") no-repeat 33px 27px;
+  padding: 25px 40px 25px 90px;
+  background: url("../img/video.svg") no-repeat 33px 30px;
 }
 
 .manufacture__wrapper {
@@ -46,7 +46,7 @@
   color: $text-color;
   font-size: 13px;
   line-height: 24px;
-  padding: 0 40px 25px 30px;
+  padding: 0 45px 25px 32px;
   margin: 0;
 }
 
@@ -109,7 +109,7 @@
     height: 460px;
     flex-wrap: wrap;
     padding: 0 57px 0 0;
-    margin: 0 auto 105px;
+    margin: 0 auto 100px;
     transition-duration: 200ms;
 
     &:hover {
@@ -124,8 +124,8 @@
   .manufacture__header {
     width: 230px;
     margin: 45px 0 0;
-    padding: 55px 60px 32px 0;
-    background-position: 0 0;
+    padding: 48px 60px 35px 0;
+    background-position: 5px -4px;
   }
 
   .manufacture__wrapper {
@@ -142,11 +142,15 @@
   .manufacture__text {
     width: 230px;
     padding: 0;
-    margin: 0 0 50px;
+    margin: 0 0 48px;
   }
 
   .manufacture__button {
     width: 230px;
     margin: 0;
+  }
+
+  .manufacture__play {
+    left: 290px;
   }
 }

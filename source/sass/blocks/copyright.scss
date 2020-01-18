@@ -40,10 +40,10 @@
 @media (min-width: $tablet) {
   .copyright {
     margin: 0;
-    padding: 40px 0 35px 33px;
+    padding: 0 0 0 40px;
     align-items: center;
     justify-content: space-between;
-    width: 350px;
+    width: 223px;
   }
 
   .copyright__link {
@@ -57,6 +57,7 @@
 
 @media (min-width: $desktop) {
   .copyright {
-    padding: 42px 18px 35px 152px;
+    width: 350px;
+    padding: 42px 15px 35px 156px;
   }
 }

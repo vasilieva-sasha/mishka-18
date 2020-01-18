@@ -152,7 +152,7 @@
   .contacts__write-us {
     display: block;
     width: 230px;
-    margin: 50px auto;
+    margin: 53px auto 0;
   }
 }
 
@@ -175,7 +175,7 @@
   .contacts__header {
     padding: 170px 0 20px 185px;
     background-position: 74px 158px;
-    margin: 0 0 25px;
+    margin: 0 0 30px;
   }
 
   .contacts__table {
@@ -191,6 +191,7 @@
 
   .contacts__heading {
     flex: none;
+    margin: 0 10px 0 0;
   }
 
   .contacts__address {

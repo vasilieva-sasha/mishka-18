@@ -17,11 +17,11 @@
         <picture>
           <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img src="img/logo-mobile.svg" alt="Логотип интернет-магазина Mishka">
+          <img class="page-header__image" src="img/logo-mobile.svg" alt="Логотип интернет-магазина Mishka">
         </picture>
     </a>
       <nav class="navigation navigation--opened">
-        <button class="navigation__toggle navigation__toggle--no-js navigation__toggle--opened" type="button"></button>
+        <button class="navigation__toggle navigation__toggle--no-js navigation__toggle--opened" type="button" aria-label="кнопка открытия/закрытия меню"></button>
         <ul class="navigation__menu navigation__menu--grey">
           <li class="navigation__item navigation__item--catalog"><a class="navigation__link" href="#">Каталог товаров</a></li>
           <li class="navigation__item navigation__item--knitting"><a class="navigation__link" href="form.html">Вязание на заказ</a></li>
@@ -195,7 +195,7 @@
         </a>
       </div>
     </footer>
-    <div class="modal__overlay-js"></div>
+    <div class="modal-overlay-js"></div>
     <section class="modal">
       <h2 class="modal__header heading heading--med">Добавить в&nbsp;корзину</h2>
       <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">

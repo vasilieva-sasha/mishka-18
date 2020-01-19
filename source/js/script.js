@@ -3,7 +3,7 @@ var menuNav = document.querySelector(".navigation__menu")
 var menuUser = document.querySelector(".site-list")
 var modal = document.querySelector(".modal")
 var buttonCart = document.querySelectorAll(".js-button-cart")
-var overlay = document.querySelector(".modal__overlay-js")
+var overlay = document.querySelector(".modal-overlay-js")
 var buttonAdd = document.querySelector(".modal__button")
 
 window.onload = function() {
@@ -25,7 +25,7 @@ window.onload = function() {
       buttonCart[i].addEventListener("click", function(evt) {
         evt.preventDefault();
         modal.classList.add("modal--js-show");
-        overlay.classList.add("modal--js-show");
+        overlay.classList.add("modal-overlay-js--show");
       })
     }};
 
@@ -33,7 +33,7 @@ window.onload = function() {
       buttonAdd.addEventListener("click", function(evt) {
         evt.preventDefault();
         modal.classList.remove("modal--js-show");
-        overlay.classList.remove("modal--js-show");
+        overlay.classList.remove("modal-overlay-js--show");
       })
     };
 
@@ -41,7 +41,7 @@ window.onload = function() {
       overlay.addEventListener("click", function(evt) {
         evt.preventDefault();
         modal.classList.remove("modal--js-show");
-        overlay.classList.remove("modal--js-show");
+        overlay.classList.remove("modal-overlay-js--show");
       })
     };
 
@@ -49,6 +49,6 @@ window.onload = function() {
       if (evt.keyCode === 27) {
         evt.preventDefault();
           modal.classList.remove("modal--js-show");
-          overlay.classList.remove("modal--js-show");
+          overlay.classList.remove("modal-overlay-js--show");
       }
   });

@@ -17,11 +17,11 @@
         <picture>
           <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img src="img/logo-mobile.svg" alt="Логотип интернет-магазина Mishka">
+          <img class="page-header__image" src="img/logo-mobile.svg" alt="Логотип интернет-магазина Mishka">
         </picture>
       </a>
       <nav class="navigation navigation--opened">
-        <button class="navigation__toggle navigation__toggle--no-js navigation__toggle--opened" type="button"></button>
+        <button class="navigation__toggle navigation__toggle--no-js navigation__toggle--opened" type="button" aria-label="кнопка открытия/закрытия меню"></button>
         <ul class="navigation__menu navigation__menu--grey">
           <li class="navigation__item navigation__item--catalog"><a class="navigation__link" href="catalog.html">Каталог товаров</a></li>
           <li class="navigation__item navigation__item--knitting"><a class="navigation__link" href="form.html">Вязание на заказ</a></li>
@@ -112,22 +112,22 @@
           </div>
         </fieldset>
         <div class="form__wrapper form__wrapper--tel">
-          <p class="form__legend form__legend--tel">Тел</p>
-          <input class="form__input form__input--tel" type="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="^[+]7[0-9]{10}$" required="">
+          <label class="form__legend form__legend--tel" for="tel">Тел</label>
+          <input class="form__input form__input--tel" type="tel" id="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="^[+]7[0-9]{10}$" required="">
           <svg class="form__icon" width="24.829px" height="24.333px">
             <use xlink:href="#icon-phone"></use>
           </svg>
         </div>
         <div class="form__wrapper form__wrapper--mail">
-          <p class="form__legend form__legend--mail">E-mail</p>
-          <input class="form__input form__input--mail" type="email" name="email" placeholder="Ваш Email*" required="">
+          <label class="form__legend form__legend--mail" for="mail">E-mail</label>
+          <input class="form__input form__input--mail" type="email" id="mail" name="email" placeholder="Ваш Email*" required="">
           <svg class="form__icon form__icon--mail" width="32px" height="32px">
             <use xlink:href="#icon-mail"></use>
           </svg>
         </div>
         <div class="form__wrapper form__wrapper--text">
-          <p class="form__legend form__legend--text">Доп</p>
-          <textarea class="form__input form__input--text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <label class="form__legend form__legend--text" for="preference">Доп</label>
+          <textarea class="form__input form__input--text" id="preference" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>
         <sup class="form__small">*Поля обязательны для заполнения</sup>
         <button class="form__button button" type="submit">Отправить заказ</button>

@@ -11,20 +11,20 @@
 
 .manufacture__wrapper {
   position: relative;
-  width: 260px;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
 
 .manufacture__video {
-  width: 260px;
+  width: 100%;
   margin: 0 0 22px;
 }
 
 .manufacture__play {
   position: absolute;
-  top: 37px;
-  left: 80px;
+  top: calc(40% - 38px);
+  left: calc(50% - 50px);
   width: 101px;
   height: 77px;
   background: transparent url("../img/play.svg") no-repeat;

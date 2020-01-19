@@ -68,12 +68,22 @@
     box-shadow: inset 0 -2px 0 0 $design-color;
   }
 
+  &:focus {
+    box-shadow: inset 0 -2px 0 0 $design-color;
+    outline: 0 none;
+  }
+
   &--text:hover {
     border: 2px solid $design-color;
     box-shadow: none;
   }
 
   &--text:active {
+    border: 2px solid $design-color;
+    box-shadow: none;
+  }
+
+  &--text:focus {
     border: 2px solid $design-color;
     box-shadow: none;
   }
@@ -94,6 +104,16 @@
   opacity: 1;
 }
 
+.form__input--mail:focus ~ .form__icon {
+  color: $design-color;
+  opacity: 1;
+}
+
+.form__input--tel:focus ~ .form__icon {
+  color: $design-color;
+  opacity: 1;
+}
+
 .form__input--mail:hover ~ .form__icon {
   color: $design-color;
   opacity: 1;
@@ -109,15 +129,10 @@
 
 
 .form__icon {
-  position: absolute;
-  margin: 54px 0 0 225px;
+  margin: -56px 0 0 225px;
   width: 32px;
   height: 32px;
   opacity: 0.2;
-
-  &--mail {
-    margin: 45px 0 0 222px;
-  }
 }
 
 .form__label {
@@ -232,11 +247,11 @@
   }
 
   &--tel {
-    position: relative;
+    margin: 0 0 25px;
   }
 
   &--mail {
-    position: relative;
+    margin: 0 0 30px;
   }
 }
 
@@ -409,7 +424,11 @@
   }
 
   .form__icon {
-    margin: 10px 0 0 615px;
+    margin: -56px 0 0 615px;
+
+    &--mail {
+      margin: -92px 0 0 615px;
+    }
   }
 
   .form__small {
@@ -517,7 +536,7 @@
   }
 
   .form__icon {
-    margin: 10px 0 0 775px;
+    margin: 10px 0 0 -30px;
   }
 
   .form__small {

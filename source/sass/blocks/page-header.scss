@@ -11,18 +11,18 @@
   justify-content: center;
   padding: 15px 0;
   border-bottom: 1px solid $border-color-header;
+}
 
-  &:hover img {
+.page-header__image {
+  transition-duration: 200ms;
+
+  &:hover {
     opacity: 0.6;
   }
 
-  &:active img {
+  &:active {
     opacity: 0.3;
   }
-}
-
-.page-header__logo img {
-  transition-duration: 200ms;
 }
 
 .page-header__input-search {

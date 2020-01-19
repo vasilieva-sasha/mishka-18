@@ -224,6 +224,7 @@
 .form__wrapper {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   margin: 0 0 5px;
 
   &--name {
@@ -274,7 +275,7 @@
     margin: 0 0 25px;
 
     &--color {
-      padding: 55px 0 0;
+      padding: 50px 0 0;
     }
 
     &--tel {
@@ -480,11 +481,11 @@
 
   .form__color {
     flex: 1 0 88%;
-    padding: 0 25px 0 0;
+    padding: 0 18px 0 0;
   }
 
   .form__color li {
-    flex: 1 0 33%;
+    flex: 0 0 33%;
   }
 
   .form__name {

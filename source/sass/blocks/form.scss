@@ -50,6 +50,7 @@
     margin: 0 0 10px;
     border: 2px solid $text-color;
     box-shadow: none;
+    overflow: auto;
   }
 
   &--hidden {

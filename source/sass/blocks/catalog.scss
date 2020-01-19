@@ -12,7 +12,7 @@
 @media (min-width: $desktop) {
   .catalog__list {
     display: flex;
-    justify-content: space-between;
     padding: 0 calc(50% - 525px);
+    flex-wrap: wrap;
   }
 }

@@ -144,9 +144,10 @@
 
   .navigation__item {
     border-bottom: none;
+    border-right: 1px solid $border-color-header;
 
-    &--knitting {
-      border-left: 1px solid $border-color-header;
+    &:nth-of-type(2n) {
+      border-right: none;
     }
   }
 

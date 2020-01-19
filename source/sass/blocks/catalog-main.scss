@@ -39,11 +39,12 @@
   }
 
   .catalog-main__header {
-    padding: 32px 0 120px;
-    margin: 0 0 110px;
+    padding: 32px 0 100px;
+    margin: 0 0 130px;;
 
     &::after {
       height: 34px;
+      bottom: -18px;
     }
   }
 }

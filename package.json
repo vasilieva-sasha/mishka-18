@@ -6,7 +6,7 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.12",
     "del": "^5.1.0",
     "gulp": "4.0.x",
     "gulp-csso": "^4.0.1",
@@ -45,7 +45,7 @@
     "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
-    "node": "8.16"
+    "node": "10"
   },
   "dependencies": {
     "gulp-imagemin": "^6.2.0"

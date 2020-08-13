@@ -45,7 +45,7 @@
     "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
-    "node": "10"
+    "node": "12.x"
   },
   "dependencies": {
     "gulp-imagemin": "^6.2.0"
